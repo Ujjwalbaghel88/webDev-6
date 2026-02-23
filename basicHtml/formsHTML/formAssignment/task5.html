@@ -7,26 +7,152 @@
   </head>
   <body>
     <h2>Task 5</h2>
-   
-    <fieldset>
-      <legend>Form</legend>
-        <table border="1" cellpadding="5" cellspacing="1">
-        <tr align="center">
-          <th>
-            <label for="form"> APPLICATION FORM </label>
-          </th>
-        </tr>
-       
-          <tr>
-            <th>  <label for="personal">Personal Details</label></th>
-           </tr>
-          <tr>
-            <th><label for="appfullname">Applicant's full name</label></th>
-          </tr>
-      
-      </table>
-     
-    </fieldset>
-    
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <table cellpadding="5" cellspacing="0">
+            <tr>
+              <td width="350">
+                <label for="fullname">Applicant's Full Name:</label>
+              </td>
+              <td width="400">
+                <select name="select" id="select">
+                  <option value="">--select--</option>
+                  <input type="text" name="select" id="select" />
+                </select>
+              </td>
+
+              <td width="350">
+                <label for="careof">Care Of</label>
+              </td>
+
+              <td width="250">
+                <label for="parents">Parents</label>
+                <input type="radio" />
+                <label for="gurdian">Gurdian</label>
+                <input type="radio" />
+              </td>
+            </tr>
+
+            <tr>
+              <td width="350">
+              <label for="fathername">Father's Name:</label>
+
+              </td>
+              <td width="350">
+                <select name="mr" id="mr">
+                  <option value="">Mr.</option>
+                  
+                </select>
+                <input type="text">
+              </td>
+
+              <td width="350">
+                <label for="mothername">Mother's Name:</label>
+              </td>
+              <td width="350">
+                <select name="mrs" id="mrs">
+                  <option value="">Mrs.</option>
+                </select>
+                <input type="text">
+              </td>
+              
+            </tr>
+            <tr>
+              <td width="350">
+                <label for="gender">Gender:</label>
+              </td>
+              <td width="350">
+                <label for="male">Male</label>
+                <input type="radio">
+                <label for="female">Female</label>
+                <input type="radio">
+                <label for="other">Others</label>
+                <input type="radio">
+              </td>
+              <td width="350">
+                <label for="dateofbirth">Date of Birth:</label>
+
+              </td>
+              <td width="350">
+                <input type="date">
+                
+              </td>
+
+            </tr>
+
+            <tr>
+              <td width="350">
+                <label for="maritalstatus">Marital Status:</label>
+
+              </td>
+              <td width="350">
+                <select name="select" id="select">
+                  <option value="">--select--</option>
+                </select>
+                </td>
+
+                <td width="350">
+                  <label for="category">
+                    Category:
+                  </label>
+                </td>
+                <td width="350">
+                  <select name="select" id="select">
+                    <option value="">--select--</option>
+                  </select>
+
+                </td>
+            </tr>
+
+            <tr>
+              <td width="350">
+                <label for="handicapped">Handicapped:</label>
+              </td>
+              <td width="350">
+                <label for="no">No</label>
+                <input type="radio">
+                <label for="yes">Yes</label>
+                <input type="radio">
+
+              </td>
+              <td width="350">
+                <label for="exserviceman">Ex-Serviceman:</label>
+
+              </td>
+              <td width="350">
+
+                <label for="no">No</label>
+                <input type="radio">
+                <label for="yes">Yes</label>
+                <input type="radio">
+              </td>
+            </tr>
+            <tr>
+              <td width="350">
+                <label for="ews">EWS:</label>
+
+              </td>
+              <td width="350">
+                <label for="no">No</label>
+                <input type="radio">
+                <label for="yes">Yes</label>
+                <input type="radio">
+                </td>
+                <td width="350">
+                  <label for="religion">Religion:</label>
+                </td>
+                <td width="350">
+                  <select name="select" id="select">
+                    <option value="">--select--</option>
+                  </select>
+                  </td>
+            </tr>
+          </table>
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
