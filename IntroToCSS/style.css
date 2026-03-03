@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(75, 172, 68) ;
+}
+
+div{
+    background-color: aqua;
+}
+
+.abc{
+    background-color: aquamarine;
+    color: red;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+#head1{
+    background-color: brown;
+}
