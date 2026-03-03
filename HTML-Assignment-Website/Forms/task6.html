@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+  </head>
+  <body>
+    <img
+      src="images.jpg"
+      alt="Doctor image"
+      width="150"
+      height="400"
+      align="left"
+    />
+
+    <fieldset>
+      <form>
+        <h2 align="center">Doctor Appointment Form</h2>
+        <hr color="red" />
+        <table cellpadding="" cellspacing="0">
+          <tr>
+            <td><label for="appointdate">Appointment Date</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="appointtime">Appoint Time</label></td>
+            <td><input type="time" /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="name">Name</label>
+            </td>
+            <td>
+              <input type="text" value="First" />
+            </td>
+            <td>
+              <input type="text" value="Last" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" /> <label for="female">Female</label>
+              <input type="radio" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone</label></td>
+            <td><input type="text" value="####" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td><input type="text" value="city" /></td>
+            <td><input type="text" value="state" /></td>
+          </tr>
+
+          <tr>
+            <td>Your Query</td>
+            <td>
+              <textarea name="query" id="query"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="appointtype">Appointment Type</label></td>
+            <td>
+              <label for="appointtype"
+                >Select which appointment type(s) you require</label
+              >
+              <br />
+              <input type="checkbox" name="appointtype" />Cervix checkup<br />
+              <input type="checkbox" />Heart checkup <br />
+              <input type="checkbox" />Eye checkup <br />
+              <input type="checkbox" />Hearing che <br /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><button>Send</button></td>
+          </tr>
+          <p><a href="subIndex.html">back to category</a></p>
+          <p><a href="../index.html">back to home</a></p>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
