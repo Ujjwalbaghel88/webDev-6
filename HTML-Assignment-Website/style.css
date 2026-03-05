@@ -1,0 +1,65 @@
+
+header{
+    background-color: black;
+   
+    border: 5px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#a1{
+    color: rgb(227, 8, 8);
+   
+}
+.a2{
+    color: yellow;
+    
+}
+.a3{
+    color: gold;
+
+}
+
+.a4{
+    color: rgb(3, 8, 27);
+}
+
+main h3{
+    color:black;
+}
+.q1{
+  color:white;
+  background-color: black;
+}
+.q6{
+  
+  background-color:lightblue;
+}
+.q2{
+ color:white;
+  background-color: black;
+}
+.q3{
+  color:white;
+  background-color: black;
+}
+.q4{
+   color:white;
+  background-color: black;}
+.q5{
+   color:white;
+  background-color: black;
+}
+.q7{
+     color:white;
+  background-color: black;
+}
+.q8{
+     color:white;
+  background-color: black;
+}
+#c1{
+    background-color: black;
+}
