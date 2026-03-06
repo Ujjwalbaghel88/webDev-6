@@ -18,7 +18,7 @@ div{
 .btn{
     background-color: rgb(75, 172, 68);
     color: white;
-    border:2px double greenyellow;
+    border:2px;
     margin: 0 5px;
     padding: 10px 10px;
     border-radius: 300px;
