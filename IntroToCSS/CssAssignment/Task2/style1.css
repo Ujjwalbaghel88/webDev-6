@@ -1,0 +1,62 @@
+.main {
+  width: 750px;
+
+  margin: auto;
+
+  background: #cfdde3;;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.para {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+}
+
+input {
+  padding: 10px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+button {
+  background: #0c1f2a;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+img {
+  width: 250px;
+  margin-left: 50px;
+}
+.hhg {
+    margin: auto;
+  margin-left: 80%;
+  
+}
+
