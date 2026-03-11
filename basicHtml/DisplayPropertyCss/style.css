@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+  width: 200px;
+  height: 200px;
+}
+
+#Ispan,
+#Ispan2,
+#Ispan3 {
+  background-color: orange;
+  border: 1px solid #000;
+   
+}
+
+#Ispan2,#Ispan,#Ispan3
+ {
+  display:inline-block;
+}
+
+.b {
+  width: 200px;
+  height: 200px;
+}
+
+#myspan,
+#myspan1,
+#myspan2 {
+  background-color: red;
+  border: 1px solid #000;
+}
+
+#myspan1{
+    display: inline-block;
+}
+
+
+
