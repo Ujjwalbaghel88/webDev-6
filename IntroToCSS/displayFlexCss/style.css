@@ -1,0 +1,24 @@
+#parent1 {
+  height: 700px;
+  width: 700px;
+  border: 3px solid #000;
+  display: flex;
+  justify-content:center;
+  gap: 15px;
+  align-items: end;
+  flex-direction: column-reverse;
+  
+  
+}
+
+.p1child {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: rgb(23, 125, 87);
+  color: white;
+  font-size: larger;
+  display: inline-block;
+  
+}
+
