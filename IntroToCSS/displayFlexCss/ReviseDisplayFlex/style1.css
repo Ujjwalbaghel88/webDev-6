@@ -1,16 +1,18 @@
 #outerBox {
   height: 500px;
   width: 500px;
-
-  border: 1px solid rgb(1, 1, 6);
 }
 
 #parent {
+  height: 500px;
+  width: 500px;
+
+  border: 1px solid rgb(1, 1, 6);
   display: flex;
-  justify-content: ;
- 
-  align-items: center;
-  flex-direction: column;
+  justify-content: baseline;
+
+  align-items:end;
+  flex-direction: row;
   gap: 10px;
 }
 
