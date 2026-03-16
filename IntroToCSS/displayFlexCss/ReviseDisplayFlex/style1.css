@@ -1,17 +1,12 @@
-#outerBox {
-  height: 500px;
-  width: 500px;
-}
-
 #parent {
   height: 500px;
   width: 500px;
 
-  border: 1px solid rgb(1, 1, 6);
+  border: 1px solid rgb(202, 27, 91);
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
 
-  align-items:end;
+  align-items: center;
   flex-direction: row;
   gap: 10px;
 }
