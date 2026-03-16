@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap');
+
+#shadowSample {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 4px 5px rgb(161, 161, 161);
+}
+
+#textSample {
+  text-shadow: 0.5px 0.5px 1px red;
+}
+
+#btn {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 16, 105);
+  padding: 5px 10px;
+  border-start-start-radius: 15px;
+  border-end-end-radius: 15px;
+  border-end-start-radius: 15px;
+  box-shadow: 0 0 5px 0.3px gray;
+}
+
+#SomeData {
+  border: 1px solid #000;
+  width: 700px;
+  margin: auto;
+}
+
+#SomeData h1 {
+  color: red;
+}
+
+#SomeData h3{
+    color: aquamarine;
+}
+
+
+#SomeData div img{
+    width: 100px;
+}
+
+#SomeData{
+    background-color: oldlace;
+    img{
+        border-radius: 10px;
+    }
+
+    h1{
+        text-shadow: 1px 1px 0px yellow;
+    }
+}
+
+
+p{
+    font-family: cursive;
+    font-size: normal;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+h1{
+    font-family: Dancing Script;
+}
+
+
+h3{
+    font-family: Shadows Into Light;
+}
