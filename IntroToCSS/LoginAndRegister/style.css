@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#main{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh; 
+     /* vh is viewport ki height */
+     align-items: center;
+
+
+}
+
+.card{
+    background-color: aliceblue;
+    max-height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 300px;
+
+
+}
+
+.form-field{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+   
+
+}
+
+
+.form-field input{
+    border: none;
+    background: transparent;
+
+    outline: none;
+     width: 100%;
+     padding: 5ps;
+}
+.term{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton  #loginButton{
+    border: 1px solid  skyblue;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 10px;
+    /* border: none; */
+
+    border-radius: 10px;
+}
+.submitButton #loginRegister{
+        border: 1px solid  skyblue;
+      background-color: aquamarine;
+    width: 100%;
+    padding: 10px;
+    /* border: none; */
+
+    border-radius: 10px;
+}
+
+
+
+h1 span{
+
+    border-bottom:;
+}
+
+
+
+.submitButton button:hover{
+    background-color: aliceblue;
+    color: skyblue;
+}
+
+.submitButton button:active{
+    background-color: aliceblue;
+    color: skyblue;
+
+    border: 2px solid skyblue;
+    font-weight: bolder;
+}
+
+.form-field input:focus{
+    border: 1px solid skyblue;
+    border-radius: 5px;
+}
