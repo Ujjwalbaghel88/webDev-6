@@ -10,8 +10,9 @@
     justify-content: center;
     gap: 100px;
     height: 100vh; 
+    padding-bottom: 30vh;
      /* vh is viewport ki height */
-     align-items: center;
+     align-items: end;
 
 
 }
@@ -33,6 +34,7 @@
     gap: 10px;
     align-items: center;
     border-bottom: 1px solid gray;
+    padding-bottom: 5px;
    
 
 }
@@ -44,23 +46,28 @@
 
     outline: none;
      width: 100%;
-     padding: 5ps;
+     padding: 5px;
 }
-.term{
+.terms{
     display: flex;
     justify-content: space-between;
 }
 
-.submitButton  #loginButton{
+
+.submitButton  #loginButton
+{
     border: 1px solid  skyblue;
     background-color: aquamarine;
     width: 100%;
     padding: 10px;
     /* border: none; */
 
-    border-radius: 10px;
+    border-radius:10px;
 }
-.submitButton #loginRegister{
+
+
+.submitButton #loginRegister
+{
         border: 1px solid  skyblue;
       background-color: aquamarine;
     width: 100%;
@@ -69,13 +76,22 @@
 
     border-radius: 10px;
 }
+ 
 
 
+ .submitButton button{
+ border: 1px solid skyblue;
+  background-color: skyblue;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+ }
 
-h1 span{
+ .referenceLink{
+    text-align: center;
 
-    border-bottom:;
-}
+ }
 
 
 
@@ -95,4 +111,9 @@ h1 span{
 .form-field input:focus{
     border: 1px solid skyblue;
     border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: skyblue;
 }
