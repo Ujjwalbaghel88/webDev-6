@@ -15,7 +15,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 1000px;
+  min-height: 1000px;   
 
   margin: 50px;
   display: flex;
@@ -45,9 +45,9 @@ body {
 }
 
 .imgBox {
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 90%;
   margin-bottom: 20px;
 
   display: flex;
@@ -56,8 +56,8 @@ body {
 }
 
 .imgBox img {
-  border-radius: 100%;
-  width: 150%;
+  border-radius: 90%;
+  width: 100%;
   height: 100%;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 #experience {
-  display: grid;
+  display:grid;
   justify-items: baseline;
   margin: 10px;
   gap: 1px;
