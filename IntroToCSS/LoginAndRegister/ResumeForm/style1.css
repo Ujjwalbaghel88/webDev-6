@@ -73,6 +73,11 @@ body {
      text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+   color: #fcfeff;
+    padding-bottom: 10px;
+}
+#rightSide #aboutMe .title{
+    color: black;
 }
 .icon{
      display: inline-flex;
@@ -87,10 +92,151 @@ body {
    margin-bottom: 20px;
 }
 .text{
-     color: rgb(200, 193, 193);
-  
+    /* color:rgb(198, 170, 170); */
+  color:rgb(255, 166, 0) ;
   margin-bottom: 20px;
 }
 .textYellow{
     color: yellow;
+}
+
+#container #rightSide {
+  position: relative;
+  background:rgb(245, 243, 243);
+  padding: 40px;
+}
+#aboutMe
+{
+    
+
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+#experience{
+  
+      display: grid;
+    justify-items: baseline;
+    margin:10px;
+    gap: 1px;
+    
+  
+}
+#experienceM{
+    
+    display:flex;
+
+       .company{
+        color: #03a9f4;
+     }
+    margin: auto;
+
+ 
+
+margin-top: 10px;
+
+}
+
+
+#experienceM #leftdiv{
+   
+
+  margin-right: 120px;
+    
+
+    
+  
+
+}
+#experience #rightdiv{
+   margin: auto;
+
+}
+#experience #exP{
+    margin-bottom: 50px;
+}
+
+p{
+      letter-spacing: 1px;
+      line-height: 1.0;
+      font-size: medium;
+     margin: 10px 10px;
+  
+}
+
+.position{
+    color:#03a9f4;
+}
+
+#education{
+
+      display: grid;
+    justify-items: baseline;
+    margin:10px;
+    gap: 1px;
+    
+}
+#educationM{
+    
+
+    display:flex;
+
+       .company{
+        color: #03a9f4;
+     }
+    margin: auto;
+
+ 
+
+margin-top: 10px;
+}
+
+#educationM #leftdiv{
+   
+
+    
+    margin-right: 120px;
+
+}
+#education 
+#award{
+      display: grid;
+    justify-items: baseline;
+    margin:10px;
+    gap: 1px;
+}
+
+#awardm{
+
+
+    display:flex;
+
+       .company{
+        color: #03a9f4;
+     }
+    margin: auto;
+
+ 
+
+margin-top: 10px;
+
+}
+
+   
+#awardm #leftdiv{
+    margin-right: 120px;
+  
+   
+
+}
+#award #certificate{
+      
+        margin-bottom: 100px;
+    }
+     
+#education #edu{
+    margin-bottom: 80px ;
 }
