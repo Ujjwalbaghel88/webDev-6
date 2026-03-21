@@ -6,9 +6,9 @@
 #head{
     padding: 10px;
     background-color: greenyellow;
-    position: sticky;
-    top: 10px;
-    /* z-index: 99; */
+    position:sticky;
+    top: 100px;
+    z-index: 99;
 
 
 }
@@ -29,12 +29,15 @@ button{
 }
 }
 
-#something {
-  border: 1px solid #000;
+#something 
+{
+  border: 2px dotted #000;
   background: aqua;
   width: 700px;
   height: 300px;
-  position: relative;
+  position:relative;
+
+  top: 100px;
 }
 
 #ricrImg {
@@ -44,6 +47,6 @@ button{
 }
 
 #visitButton {
-  position: absolute;
+  position: relative;
   right: 0;
 }
