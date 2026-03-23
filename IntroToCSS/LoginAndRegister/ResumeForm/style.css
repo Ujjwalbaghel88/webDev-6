@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;   
+
+  margin: 50px;
+  display: flex;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+#leftSide {
+  background-color: #085d85;
+  color: white;
+  padding: 40px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile .h2text {
+  color: white;
+  text-align: center;
+}
+
+.imgBox {
+  width: 250px;
+  height: 250px;
+  border-radius: 90%;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBox img {
+  border-radius: 90%;
+  width: 100%;
+  height: 100%;
+}
+
+#contactInfo {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #fcfeff;
+  padding-bottom: 10px;
+}
+#rightSide #aboutMe .title {
+  color: black;
+}
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 25px;
+  font-size: 10px;
+  background: #03a9f4;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.text {
+  /* color:rgb(198, 170, 170); */
+  color: rgb(255, 166, 0);
+  margin-bottom: 20px;
+}
+.textYellow {
+  color: yellow;
+}
+
+#container #rightSide {
+  position: relative;
+  background: rgb(245, 243, 243);
+  padding: 40px;
+}
+#aboutMe {
+  margin-bottom: 50px;
+}
+
+#experience {
+  display:grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
+}
+#experienceM {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#experienceM #leftdiv {
+  margin-right: 120px;
+}
+#experience #rightdiv {
+  margin: auto;
+}
+#experience #exP {
+  margin-bottom: 50px;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1;
+  font-size: medium;
+  margin: 10px 10px;
+}
+
+.position {
+  color: #03a9f4;
+}
+
+#education {
+  display: grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
+}
+#educationM {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#educationM #leftdiv {
+  margin-right: 120px;
+}
+#education #award {
+  display: grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
+}
+
+#awardm {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#awardm #leftdiv {
+  margin-right: 120px;
+}
+#award #certificate {
+  margin-bottom: 100px;
+}
+
+#education #edu {
+  margin-bottom: 80px;
+}
