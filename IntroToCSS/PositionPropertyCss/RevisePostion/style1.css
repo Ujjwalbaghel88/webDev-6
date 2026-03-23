@@ -14,7 +14,7 @@
   border-radius: 10px;
 }
 #button {
-  position: sticky;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 5px;
@@ -36,12 +36,13 @@
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
+    background-color: burlywood;
 
     
 
 p{
 
-    color: green;
+    color: black;
 }
 }
 
