@@ -1,0 +1,48 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+}
+#page{
+  
+    margin: 10px auto;
+    width: 794px;
+    height: 1123px;
+    display: flex;
+}
+#sidebar{
+
+    width: 35%;
+ 
+    background-color: #34495e;
+    padding: 10px;
+}
+#mainContent{
+
+    width: 65%;
+  
+    background-color: #d6dbdf;
+    padding: 10px;
+}
+#image{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    img{
+        width: inherit ;
+        height: inherit;
+
+    }
+
+}
+#name{
+
+    color: aliceblue;
+    font-variant: ;
+}
+#designation{
+
+    color: yellow;
+}
+
