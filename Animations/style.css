@@ -1,0 +1,26 @@
+#div1{
+    border: 1px solid black;
+    width: 10px;
+    height: 20px;
+    overflow: hidden; // box ke bahar ki cheej hide ho jayegi//
+    text-wrap-mode: nowrap;
+}
+#div1:hover{
+    width: 200px;
+
+    transition: width 5s  linear 2s;
+}
+#card{
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    /* align-items: center; */
+
+    transform: rotateZ(0deg);
+    transition: transform 2s linear;
+}
+#card:hover{
+    transform: rotateZ(360000000000deg);
+    transition: transform 20s linear;
+}
