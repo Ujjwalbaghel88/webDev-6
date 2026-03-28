@@ -8,7 +8,7 @@
 #div1:hover{
     width: 200px;
 
-    transition: width 5s  linear 2s;
+    transition: width 2s linear 5s;
 }
 #card{
     margin: auto;
@@ -18,9 +18,10 @@
     /* align-items: center; */
 
     transform: rotateZ(0deg);
-    transition: transform 2s linear;
+    transition: transform 7s linear ;
 }
 #card:hover{
-    transform: rotateZ(360000000000deg);
-    transition: transform 20s linear;
+    transform: rotateZ(3600000deg);
+    transition: transform 2s linear;
 }
+
