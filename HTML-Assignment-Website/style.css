@@ -1,65 +1,71 @@
+:root{
 
+  --background--color:rgb(255, 170, 12);
+  --text--color:yellow;
+  --color--:rgb(29, 255, 44);
+}
 header{
-    background-color: black;
+    background-color:var(--background--color);
    
     border: 5px solid black;
     border-radius: 5px;
-    color: white;
+    color: var(--color--);
 }
 
 
 
 #a1{
-    color: rgb(227, 8, 8);
+    color:var(--text--color);
    
 }
 .a2{
-    color: yellow;
+    color: var(--text--color);
     
 }
 .a3{
-    color: gold;
+    color: var(--text--color);
 
 }
 
 .a4{
-    color:white;
+    color :var(--color--);
 }
 
 main h3{
     color:black;
 }
 .q1{
-  color:white;
-  background-color: black;
+  color:var(--color--);
+  background-color:var(--background--color);
 }
 .q6{
   
   background-color:lightblue;
 }
 .q2{
- color:white;
-  background-color: black;
+ color:var(--color--);
+  background-color: var(--background--color);
 }
 .q3{
-  color:white;
-  background-color: black;
+  color:var(--color--);
+  background-color: var(--background--color);
 }
 .q4{
-   color:white;
-  background-color: black;}
+   color:var(--color--);
+  background-color: var(--background--color);
+}
 .q5{
-   color:white;
-  background-color: black;
+   color:var(--color--);
+  background-color: var(--background--color);
 }
 .q7{
-     color:white;
-  background-color: black;
+     color:var(--color--);
+  background-color: var(--background--color);
 }
 .q8{
-     color:white;
-  background-color: black;
+     color:var(--color--);
+  background-color:var(--background--color);
 }
 #c1{
-    background-color: black;
+    background-color: var(--background--color);
 }
