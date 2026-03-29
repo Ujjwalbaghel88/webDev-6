@@ -2,7 +2,7 @@
     border: 1px solid black;
     width: 10px;
     height: 20px;
-    overflow: hidden; // box ke bahar ki cheej hide ho jayegi//
+    overflow:hidden; // box ke bahar ki cheej hide ho jayegi//
     text-wrap-mode: nowrap;
 }
 #div1:hover{

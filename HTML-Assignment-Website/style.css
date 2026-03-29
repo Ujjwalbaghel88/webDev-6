@@ -2,7 +2,7 @@
 
   --background--color:rgb(255, 170, 12);
   --text--color:yellow;
-  --color--:rgb(29, 255, 44);
+  --color:rgb(29, 255, 44);
 }
 header{
     background-color:var(--background--color);
@@ -28,14 +28,19 @@ header{
 }
 
 .a4{
-    color :var(--color--);
+    color :var(--color);
 }
 
 main h3{
-    color:black;
+
+
+  ul{
+    background-color: var(--background--color);
+  }
+    color:var(--color);
 }
 .q1{
-  color:var(--color--);
+  color:var(--color);
   background-color:var(--background--color);
 }
 .q6{
@@ -43,27 +48,27 @@ main h3{
   background-color:lightblue;
 }
 .q2{
- color:var(--color--);
+ color:var(--color );
   background-color: var(--background--color);
 }
 .q3{
-  color:var(--color--);
+  color:var(--color);
   background-color: var(--background--color);
 }
 .q4{
-   color:var(--color--);
+   color:var(--color);
   background-color: var(--background--color);
 }
 .q5{
-   color:var(--color--);
+   color:var(--color);
   background-color: var(--background--color);
 }
 .q7{
-     color:var(--color--);
+     color:var(--color);
   background-color: var(--background--color);
 }
 .q8{
-     color:var(--color--);
+     color:var(--color);
   background-color:var(--background--color);
 }
 #c1{
