@@ -47,12 +47,11 @@ h2 {
 }
 
 p {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: var(--background-color);
 
   border-radius: 12px;
   padding: 14px 16px;
   margin: 12px auto;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
 }
 
 a {
