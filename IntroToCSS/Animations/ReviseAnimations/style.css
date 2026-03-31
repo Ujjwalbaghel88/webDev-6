@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ body {
+      
+       display: flex;
+       
+        justify-content: center;
+        align-items: ;
+         margin: 0;
+        /* height: 100vh; */
+       
+    }
+
+
+
+#div1{
+   
+   
+  
+    border: 2px solid black;
+    width: 10px;
+    height: 20px;
+    overflow:hidden; // box ke bahar ki cheej hide ho jayegi//
+    /* text-wrap-mode: nowrap; */
+    
+
+}
+#div1:hover{
+    width: 185px;
+    /* height: 200px; */
+
+    transition: width 3s ease-in-out 0s;
+}
+#div2{
+  
+   margin-top: 40px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+     transform: rotateZ(330deg);
+    transition: transform 8s linear ;
+    
+    /* text-wrap-mode: nowrap; */
+}
+
+#div:hover{
+    transform: rotateZ(0deg);
+    transition: transform 2s linear;
+}
+img{
+    /* margin-top: 200px; */
+    width: 250px;
+    height: 300px;
+}
