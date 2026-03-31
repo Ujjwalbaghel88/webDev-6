@@ -42,14 +42,14 @@
     height: 300px;
     border: 1px solid black;
      transform: rotateZ(330deg);
-    transition: transform 8s linear ;
+    transition: transform 2s ease-in-out 2s;
     
     /* text-wrap-mode: nowrap; */
 }
 
-#div:hover{
-    transform: rotateZ(0deg);
-    transition: transform 2s linear;
+#div2   :hover{
+    transform: rotateZ(33000000000000deg);
+    transition: transform 5s ease-in-out 9s;
 }
 img{
     /* margin-top: 200px; */
