@@ -7,11 +7,10 @@
  body {
       
        display: flex;
-       
         justify-content: center;
-        align-items: ;
          margin: 0;
         /* height: 100vh; */
+
        
     }
 
