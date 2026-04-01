@@ -39,19 +39,27 @@
    margin-top: 40px;
     width: 250px;
     height: 300px;
-    border: 1px solid black;
-     transform: rotateZ(330deg);
-    transition: transform 2s ease-in-out 2s;
+  
+     transform: rotateZ(0deg);
+    transition: transform 5s ease-in-out ;
+
+    
+ 
+
+
     
     /* text-wrap-mode: nowrap; */
 }
 
-#div2   :hover{
-    transform: rotateZ(33000000000000deg);
-    transition: transform 5s ease-in-out 9s;
+#div2:hover{
+    transform: rotateZ(36000deg);
+    transition: transform 2s ease-in-out ;
 }
 img{
     /* margin-top: 200px; */
     width: 250px;
     height: 300px;
+
+     animation-duration: 3s;
+  animation-name: slide-in;
 }
