@@ -15,13 +15,37 @@
     width: 200px;
     height: 300px;
     border: 1px solid black;
+    background-color: orange;
+    position: relative;
+   
     /* align-items: center; */
-
+/* 
     transform: rotateZ(0deg);
-    transition: transform 7s linear ;
+    transition: transform 7s linear ; */
+   
 }
+
 #card:hover{
-    transform: rotateZ(3600000deg);
-    transition: transform 2s linear;
+    /* transform: rotateZ(3600000deg);
+    transition: transform 2s linear; */
+
+
+      animation-name: moving;
+     animation-duration: 5s;
+     position: absolute;
+} 
+
+@keyframes moving {
+    from{
+        background-color: orange;
+        top: 0px;
+    right: 0px;
+    }
+    to{
+        background-color: cyan;
+        top: 0px;
+        right: 1000px;
+    }
 }
+
 
