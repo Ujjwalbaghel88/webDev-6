@@ -6,7 +6,7 @@
 
 #parent1 {
   display:grid;
-  grid-template-columns: 150px 200px 150px 200px;
+  grid-template-columns: 150px 200px 150px 200px;  /*for a coloumn size create in web page*/
   justify-items: center;
   align-items:center;
   row-gap: 10px;
