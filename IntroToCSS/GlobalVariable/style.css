@@ -1,0 +1,48 @@
+:root {
+  --main-color: rgb(228, 7, 224);
+  --sub-color: skyblue;
+  --data-color: green;
+  --text-color: black;
+}
+
+button {
+  border: 1px dotted var(--text-color);
+  border-radius: 9px;
+  padding: 8px 15px;
+}
+
+#Login{
+  background-color: var(--main-color);
+}
+#Register {
+  background-color: var(--sub-color);
+}
+h1 {
+  color: var(--main-color);
+  border:1px dotted var(--main-color);
+  
+}
+h3 {
+  color: var(--sub-color);
+}
+
+p {
+    
+  color: var(--data-color);
+}
+table{
+ 
+    border-collapse: collapse;
+
+}
+th,td{
+  border: 1px dotted black;
+}
+
+th {
+  color: var(--main-color);
+}
+td {
+  color: var(--data-color);
+}
+
