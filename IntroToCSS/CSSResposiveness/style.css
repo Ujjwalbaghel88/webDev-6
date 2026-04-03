@@ -3,10 +3,10 @@
   padding: 0;
 }
 #Navbar {
-  background-color: rgb(180, 180, 236);
+  background-color: rgb(32, 214, 90);
   display: flex;
   justify-content: space-between;
-  color: rgb(8, 0, 255);
+  color: rgb(249, 19, 134);
   padding: 8px;
   align-items: center;
   position: sticky;
@@ -52,19 +52,32 @@ div {
 }
 
 #rightPart {
-    background:orange;
+    background:white;
   height: 85vh;
   padding: 20px;
   width: 30%;
+  display: grid;
+
+  #part{
+    background-color: green
+  }
 
   ol {
     padding: 0 30px;
   }
 }
+#rightrightPart{
+    background-color: orange;
+
+}
 
 @media screen and (max-width: 1024px) {
   #leftPart {
     grid-template-columns: auto auto auto;
+  }
+  #rightPart{
+    grid-template-rows: auto auto;
+    
   }
 }
 @media screen and (max-width: 760px) {
@@ -82,4 +95,5 @@ div {
   #rightPart {
     background:lightblue;
   }
+
 }
