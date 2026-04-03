@@ -1,0 +1,27 @@
+#outerBox{
+    height: 700px;
+    width: 700px;
+    border: 1px solid #000;
+}
+
+#parent1 {
+  display:grid;
+  grid-template-columns: 150px 200px 150px 200px;  /*for a coloumn size create in web page*/
+  justify-items: center;
+  align-items:center;
+  row-gap: 10px;
+  
+  
+}
+
+.p1child {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: rgb(23, 125, 87);
+  color: white;
+  font-size: larger;
+  
+  
+}
+
