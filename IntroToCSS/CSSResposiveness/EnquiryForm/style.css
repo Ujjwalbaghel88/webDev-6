@@ -1,0 +1,149 @@
+.A1{
+    background-color:#d6f2fe80;
+    height: 700px;
+    width: 550px;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+div{
+    margin: 8px auto;
+    padding:20px ;
+    width: 550px;
+    border-radius: 10px; 
+
+   
+} 
+input{
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    
+   
+
+}
+@media(max-width:480px){
+    .container{
+        padding: 15px;
+    }
+}
+select{
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+} 
+.collage{
+    width:165%;
+    padding: 8px;
+}
+.A2{
+   margin-top: 20px;
+}
+.sub{
+    text-align: center;
+     margin: 20px   
+
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding : 12px 40px;
+    margin: 1px;
+}
+.person{
+    width: 80%;
+    
+}
+.contact{
+   width: 80%;
+}
+.email{
+    width:90% ;
+}
+.quali{
+    width:80% ;
+}
+
+
+
+   
+
+
+    
+
+
+.A1{
+    background-color:#d6f2fe80;
+    height: 700px;
+    width: 550px;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+div{
+    margin: 8px auto;
+    padding:20px ;
+    width: 550px;
+    border-radius: 10px; 
+
+   
+} 
+input{
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    
+   
+
+}
+@media(max-width:480px){
+    .container{
+        padding: 15px;
+    }
+}
+select{
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+} 
+.collage{
+    width:165%;
+    padding: 8px;
+}
+.A2{
+   margin-top: 20px;
+}
+.sub{
+    text-align: center;
+     margin: 20px   
+
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding : 12px 40px;
+    margin: 1px;
+}
+.person{
+    width: 80%;
+    
+}
+.contact{
+   width: 80%;
+}
+.email{
+    width:90% ;
+}
+.quali{
+    width:80% ;
+}
