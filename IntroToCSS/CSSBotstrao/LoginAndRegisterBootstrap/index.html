@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+
+
+    <div class=" bg-info  bg-opacity-50 d-flex justify-content-center gap-5 pb-5 align-items-center vh-100 w-100 ">
+      <div class="bg-light p-4 pt-1  m-5 rounded-4 " >
+        <!-- login code goes here -->
+        <h1><span><u>Lo</u></span>gin</h1>
+        <div class="d-flex gap-2 align-items-center pb-3">
+          <span>
+            <i class="bi bi-envelope"></i>
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="email" 
+            name="loginEmail"
+            id="loginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="d-flex gap-2 align-items-center  pb-2">
+
+          <span>
+       <i class="bi bi-lock-fill"></i>
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="password"
+            name="loginPassword"
+            id="loginPassword"
+            placeholder="Confirm a password"
+          />
+          <span>
+           <i class="bi bi-eye"></i>
+          </span>
+        </div>
+
+        <div class="d-flex justify-content-between  mt-2">
+          <div>
+            <input class="" type="checkbox" name="rememberMe"/>
+            <span>Remember Me</span>
+          </div>
+          <a class="ms-4" href="#">Forget password?</a>
+        </div>
+        <div >
+          <!-- <button class="btn btn-dan ger custom-hover border border-1  rounded-3 w-100 mt-3 p-2 text-center bg-info ">Login</button> -->
+          <button class="btn btn-info  text-light custom-hover border border-1  rounded-3 w-100 mt-3 p-2 text-center ">Login</button>
+
+        </div>
+
+        <div class="text-center mt-3" >
+          <p>Don't have an account?<a  class="text-decoration-none text-primary" href="#register">Signup Now</a></p>
+        </div>
+      </div>
+      <div class="bg-light bg-opacity-100 p-4 pt-1  m-1 rounded-4 " id="register">
+        <!-- Registration code goes here -->
+        <h1><span><u>Re</u></span>gister</h1>
+
+        <div class="d-flex gap-2 align-items-center  p-2 pb-2 ">
+          <span>
+           <i class="bi bi-person"></i>
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="text"
+            name="registerName"
+            id="registerName"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="d-flex gap-2 align-items-center p-2 pb-2">
+          <span>
+            <i class="bi bi-envelope"></i>
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="email"
+            name="registerEmail"
+            id="registerEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="d-flex gap-2 align-items-center border border-0  border-bottom-2 p-2 pb-2 " >
+            <span>
+            <i class="bi bi-lock-fill"></i>
+         
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="password"
+            name="registerCreatePassword"
+            id="registerCreatePassword"
+            placeholder="Create a password"
+          />
+        </div>
+
+        <div class="d-flex gap-2 align-items-center border  border-0 border-bottom-2 p-2 pb-2">
+          <span>
+          <i class="bi bi-lock-fill"></i>
+          </span>
+          <input
+          class="border-0 bg-transparent w-100 p-1"
+            type="password"
+            name="registerConfirmPassword"
+            id="registerConfirmPassword"
+            placeholder="Confirm a password"
+          />
+          <span>
+            <i class="bi bi-eye"></i>
+          </span>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <div>
+            <input
+           
+              type="checkbox"
+              name="termAndCondition"
+              id="termAndCondition"
+            />
+            <span>I accept all terms & condition</span>
+          </div>
+        </div>
+        <div class="submitButton">
+          <button class="btn btn-info  text-light custom-hover border border-1  rounded-3 w-100 mt-2 p-2 text-center "">Register</button>
+        </div>
+
+        <div class="text-center">
+          <p>Already have an account?<a class="text-decoration-none text-primary" href="#">Login Now</a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
