@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #b9ddec;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: rgb(107, 103, 103);
+    animation: fadeIn 2s ease;
+}
+
+#loginDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    gap: 15px;
+    width: 23%;
+    box-shadow: 5px 5px 3px 0 gray;
+    transition: transform 0.3s linear;
+}
+
+#loginDiv:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.logo {
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    animation: head 1.5s 2s linear alternate infinite;
+
+    img {
+        height: 100px;
+        padding-right: 20px;
+    }
+}
+
+@keyframes head {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+
+.input-field {
+    display: grid;
+
+    input {
+        height: 37px;
+        border: 1px solid rgb(210, 203, 203);
+        border-radius: 8px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline-color: blueviolet;
+    }
+}
+
+.checkbox-div {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+
+    input {
+        accent-color: blueviolet;
+    }
+}
+
+.button {
+    button {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        box-shadow: 2px 2px 2px 0 gray;
+        transition: transform 0.2s linear 0;
+
+        .a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+    button:active {
+        box-shadow: none;
+        transform: translate(2px, 2px);
+    }
+}
+
+
+.os {
+    display: flex;
+    gap: 20px;
+
+    .os-button {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+    hr {
+        width: 20%;
+    }
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+
+    a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+}
+
+.registerdiv {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 30px;
+    gap: 10px;
+    width: 23%;
+    box-shadow: 5px 5px 3px 0 gray;
+    transition: transform 0.3s linear;
+}
+
+.registerdiv:hover {
+    transform: scale(1.05);
+}
+
+.welcome {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    h3 {
+        color: black;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.terms {
+    display: flex;
+    gap: 10px;
+    justify-content: baseline;
+    padding: 5px 0;
+
+    p {
+        font-size: 13px;
+    }
+
+    span {
+        color: blueviolet;
+    }
+
+    input {
+        accent-color: blueviolet;
+    }
+}
