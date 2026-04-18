@@ -4,13 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- image -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 </head>
 <body>
     
+     <div
+      class="d-flex justify-content-between align-items-center bg-danger position-sticky top-0 z-2 shadow-md"
+    >
+     <a href="index.html" class="">
+            <img
+              id="logoimg"
+              src="./image1.png"
+              alt="logo"
+              class=" w-25 ms-3 bg-transparent flex-shrink-0"
+            />
+          </a>
 
+            <div class="d-flex align-items-center gap-2 mt-2 mt-sm-0">
+            <a
+              id="Login"
+              class="btn btn-outline-info px-3 w-100  text-light  w-sm-auto"
+              href="./login.html"
+            >
+              Login
+            </a>
+            <a
+              id="Register"
+              class="btn btn-light  px-3 w-100 w-sm-auto "
+              href="./register.html"
+            >
+              Register
+            </a>
+          </div>
+      </div>
 
-    <div>
+      <!-- Register Page  -->
+
         
+
+      <div
+        class="d-flex justify-content-lg-end align-items-center h-100  position-relative vh-100 w-100 bg-light-subtle"
+      >
+        <!-- <div class="  border border-1 p-5 bg-light-subtle me-5 "> -->
+            <div  class=" d-flex flex-column gap-2 px-5 py-4 rounded-3 mx-2 bg-light ms-auto me-4 ">
+          <h1 class="text-center text-danger mt-1 fw-bold">Create Account</h1>
+          <p class="text-center">Join us a Customer,Restaurant,or Rider</p>
+
+
+          <label class="form-label fw-medium">Register as:</label>
+              <div class="d-flex gap-3 mb-2">
+                <div><input type="radio" name="role" checked /> Customer</div>
+                <div><input type="radio" name="role" /> Restaurant</div>
+                <div><input type="radio" name="role" /> Rider</div>
+              </div>
+
+
+              <!-- Full Name -->
+              <input type="text" class="form-control mb-1 py-2" placeholder="Enter Your full name">
+              <!-- Enter Email -->
+               <input type=" email" class="form-control mb-2 py-2" placeholder="Enter Your email">
+               <!-- Phone Number -->
+                <input type="number" class="form-control mb-2 py-2" placeholder="Enter your phone number">
+                <!-- Password -->
+                 <input type="password" class="form-control mb-2 py-2" placeholder="Enter your password">
+                 <!-- Confirm your password -->
+                  <input type="password" class="form-control mb-2 py-2" placeholder="Confirm your password">
+
+         
+
+          <div
+            class="p-2 d-flex justify-content-between align-items-center mb-3 w-100"
+          >
+            <div class="d-flex gap-2">
+                <input type="checkbox" />
+                <span>I agree to the <a class="text-danger text-decoration-none fw-bold " href="#">terms and conditions</a>
+                </span> </div>
+           
+          </div>
+
+          <div>
+            <button class="btn btn-danger w-100">Register</button>
+          </div>
+
+
+         <div class="d-flex align-items-center fs-6 mb-2">
+         
+            <span class="opacity-75  ">Already registerd?</span>
+            <a href="#" class="ms-3 text-decoration-none text-danger fw-bold">Login here</a>
+         
+            
+         </div>
+
+         
+        </div>
+      </div>
     </div>
+
+
+
+      <!-- footer  -->
+         <footer class="footer pt-5 bg-dark ">
+
+    <div class="container text-center text-md-start  ">
+
+      <!-- TOP TEXT -->
+      <p class="text-center text-white fs-5 mb-5">
+        --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+      </p>
+
+      <div class="row align-items-start">
+
+        <!-- LOGO -->
+        <div class="col-md-3 text-center mb-4">
+          <img src="./cravings.png" class="footer-logo" width="100pcx" height="100px">
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">Quick Links</h6>
+          <a href="./craving.html">Home</a><br>
+          <a href="about.html">About</a><br>
+          <a href="order-now.html">Order Now</a>
+        </div>
+
+        <!-- RESTAURANTS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">For Restaurants</h6>
+          <a href="../loginRegister/registerCravings.html">Partner With Us</a><br>
+          <a href="#">Restaurant Dashboard</a>
+        </div>
+
+        <!-- RIDERS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">For Riders</h6>
+          <a href="../loginRegister/registerCravings.html">Become a Rider</a><br>
+          <a href="#">Rider Dashboard</a>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold text-white">Feedback & Support</h6>
+          <a href="feedback.html">Submit Feedback</a><br>
+          <a href="help-center.html">Help Center</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <hr class="b">
+
+      <!-- BOTTOM BAR -->
+      <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start text-white bg-dark">
+        <p>© 2026 Cravings. All rights reserved.</p>
+
+        <div>
+          <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+          <a href="terms-of-service.html" class="me-3">Terms of Service</a>
+          <a href="sitemap.html">Site Map</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
