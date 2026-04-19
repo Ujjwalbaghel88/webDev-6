@@ -3,190 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cravings</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/circleLogo-DpCri5UD.png"
+    />
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- image -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-  <body >
-    <div
-      class="d-flex justify-content-between align-items-center bg-danger position-sticky top-0 z-2 shadow-md"
-    >
-     <a href="index.html" class="">
-            <img
-              id="logoimg"
-              src="./image1.png"
-              alt="logo"
-              class=" w-25 ms-3 bg-transparent flex-shrink-0"
-            />
+  <body>
+    <header>
+      <div
+        class=" d-flex justify-content-between align-items-center "
+        id="header"
+      >
+        <div class="headerLogo">
+          <a href="./index.html">
+            <img src="../CravingsWebsite/images/image1.png" alt="Logo" />
           </a>
-
-            <div class="d-flex align-items-center gap-2 mt-2 mt-sm-0">
-            <a
-              id="Login"
-              class="btn btn-outline-info px-3 w-100  text-light  w-sm-auto"
-              href="./login.html"
-            >
-              Login
-            </a>
-            <a
-              id="Register"
-              class="btn btn-light  px-3 w-100 w-sm-auto "
-              href="./register.html"
-            >
-              Register
-            </a>
-          </div>
+        </div>
+        <div class="loginRegister">
+          <a href="./login.html" class="login btn text-white" id="login"
+            >Login</a
+          >
+          <a href="./register.html" class="register btn" id="register"
+            >Register</a
+          >
+        </div>
       </div>
-
-
-           <section class=" custom-section position-relative">
-      <!-- Background Image -->
-      <img
-        id="bgimage"
-        src="./foodTable.webp"
-       clas="position-absolute  vh-100 object-fit-cover  w-100  "
-        class="w-100  vh-100 position-absolute top-0 start-0 z-n1"
-        alt="bg" 
-      />
-
-      <!-- Overlay -->
-      <div class="position-absolute top-0 start-0 w-100 h-100"></div>
-
-      <!-- Content -->
-      <div class="container d-flex align-items-center position-relative">
-         <div
-              class="login-card d-flex flex-column gap-2 px-5 py-4 rounded-3 mx-3 ms-5 mb-5 mt-5 bg-light"
-            >
-       <h1 class="text-center text-danger fw-bold">Welcome Back</h1>
+    </header>
+    <main>
+      <div class="position-relative login w-100 h-100">
+        <div class="login-bg">
+          <img
+            src="../CravingsWebsite/images/foodTable.webp"
+            alt="FoodTable"
+            class="object-fit-cover"
+          />
+        </div>
+        <div class="login-div card d-grid position-absolute">
+          <h2 class="text-center fw-bolder">Welcome Back</h2>
           <p class="text-center">Login to your Cravings account</p>
-
-          <div class="fw-bold">
-            <span class="">
-              Email <br />
-              <input
-                type="email"
-                class="p-2 mt-2 mb-3 w-100 rounded-2"
-                placeholder="Enter your email"
-              />
-            </span>
-            Password <br />
+          <div class="login-input d-grid gap-2 mb-3 mt-2">
+            <span class="fw-semibold">Email</span>
             <input
-              type="password "
-              placeholder="Enter your Password "
-              class="p-2 mt-2 rounded-2 w-100"
+              type="email"
+              class="input-field form-control shadow-none"
+              placeholder="Enter your Email"
             />
           </div>
-
+          <div class="login-input d-grid gap-2 mb-3">
+            <span class="fw-semibold">Password</span>
+            <div class="d-flex align-items-center pe-3 input-field pb">
+              <input
+                type="password"
+                class="form-control shadow-none bg-transparent border-0"
+                placeholder="Enter your password"
+              />
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
           <div
-            class="p-2 d-flex justify-content-between align-items-center mb-3 w-100"
+            class="remember d-flex justify-content-between align-items-center"
           >
-            <div class="d-flex gap-2"><input type="checkbox" />Remember me</div>
-            <a class="text-danger text-decoration-none" href="#"
-              >Forgot Password?</a
-            >
+            <div class="d-flex gap-2 align-items-center">
+              <input type="checkbox" id="remember" />
+              <label for="remember" class="terms">Remember me</label>
+            </div>
+            <div>
+              <a href="" id="anchor-underline" class="terms"
+                >Forgot Password?</a
+              >
+            </div>
           </div>
-
-          <div>
-            <button class="btn btn-danger w-100">Login</button>
+          <button class="w-100 mt-4 mb-3 py-2 border-0 rounded-2" type="submit">
+            <a href="" class="text-white" id="login-button">Login</a>
+          </button>
+          <div class="d-flex align-items-center mb-3 line terms">
+            <hr />
+            Don't have account?
+            <hr />
           </div>
-
-         <div class="d-flex align-items-center mb-2">
-          <hr class="flex-grow-1">
-           <span class="mx-2 fw-lighter text-muted">Dont have an account?</span>
-            <hr class="flex-grow-1" />
-         </div>
-
-          <div class="text-center">
-            <a class="text-danger text-decoration-none" href="#"
-              >Create an account</a
-            >
-          </div>
-      </div>
-    </section>
-
-
-
-    <!-- footer  -->
-
-    
-   <footer class=" mt-5  bg-dark ">
-
-    <div class="container text-center text-md-start   ">
-
-      <!-- TOP TEXT -->
-      <p class="text-center text-white fs-5 mb-5">
-        --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
-      </p>
-
-      <div class="row align-items-start">
-
-        <!-- LOGO -->
-        <div class="col-md-3 text-center mb-4">
-          <img src="./cravings.png" class="footer-logo" width="100pcx" height="100px">
-        </div>
-
-        <!-- QUICK LINKS -->
-        <div class="col-md-2 mb-4">
-          <h6 class="fw-bold text-white">Quick Links</h6>
-          <a href="./craving.html">Home</a><br>
-          <a href="about.html">About</a><br>
-          <a href="order-now.html">Order Now</a>
-        </div>
-
-        <!-- RESTAURANTS -->
-        <div class="col-md-2 mb-4">
-          <h6 class="fw-bold text-white">For Restaurants</h6>
-          <a href="../loginRegister/registerCravings.html">Partner With Us</a><br>
-          <a href="#">Restaurant Dashboard</a>
-        </div>
-
-        <!-- RIDERS -->
-        <div class="col-md-2 mb-4">
-          <h6 class="fw-bold text-white">For Riders</h6>
-          <a href="../loginRegister/registerCravings.html">Become a Rider</a><br>
-          <a href="#">Rider Dashboard</a>
-        </div>
-
-        <!-- SUPPORT -->
-        <div class="col-md-3 mb-4">
-          <h6 class="fw-bold text-white">Feedback & Support</h6>
-          <a href="feedback.html">Submit Feedback</a><br>
-          <a href="help-center.html">Help Center</a><br>
-          <a href="contact.html">Contact Us</a>
-        </div>
-
-      </div>
-
-      <hr class="b">
-
-      <!-- BOTTOM BAR -->
-      <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start text-white bg-dark">
-        <p>© 2026 Cravings. All rights reserved.</p>
-
-        <div>
-          <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
-          <a href="terms-of-service.html" class="me-3">Terms of Service</a>
-          <a href="sitemap.html">Site Map</a>
+          <a href="./register.html" class="text-center" id="anchor-underline"
+            ><b>Create an account</b></a
+          >
         </div>
       </div>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-section pt-4 pb-3">
+        <div class="footer-div w-100 mt-2 pb-5">
+          <p class="text-center">
+            --- Your favorite food delivery platform connecting customers with
+            restaurants and riders. ---
+          </p>
+          <div class="footer-outer d-grid pt-4">
+            <div class="footer-logo me-5 d-flex">
+              <img src="./cravings.png" alt="footerLogo" />
+            </div>
 
-  </footer>  
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">Quick Links</h4>
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./order-now.html">Order Now</a>
+            </div>
 
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">For Restaurants</h4>
+              <a href="">Partner With Us</a>
+              <a href="">Restaurant Dashboard</a>
+            </div>
 
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">For Riders</h4>
+              <a href="">Become a Rider</a>
+              <a href="">Rider Dashboard</a>
+            </div>
 
-
-  
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">Feedback & Support</h4>
+              <a href="./feedback.html">Submit Feedback</a>
+              <a href="./help-center.html">Help Center</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom footer-division"></div>
+        <div class="copy-right pt-4 d-flex justify-content-between">
+          <div class="d-flex gap-2">
+            <i class="bi bi-c-circle"></i>
+            <p>2026 Cravings. All rights reserved.</p>
+          </div>
+          <div class="d-flex gap-4">
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms-of-service.html">Terms of Service</a>
+            <a href="./sitemap.html">Site Map</a>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
