@@ -86,10 +86,10 @@
   }
 }
 
-.menuSearch::placeholder {
+/* .menuSearch::placeholder {
   color: var(--color-primary) !important;
   opacity: 0.5;
-}
+} */
 
 /* your Favourite food  */
 
@@ -103,6 +103,14 @@
     background-color: var(--color-base-100);
   }
 }
+
+/* searchbar */
+#text::placeholder {
+  color: rgba(248, 113, 113, 0.7);
+}
+
+/* Featured Restaurants */
+
 #restaurant-card {
   background: linear-gradient(
     180deg,
@@ -221,14 +229,20 @@
 
 /* Craving by the Numbers */
 
-.card-outer {
+.box-outer {
   display: flex;
   justify-content: space-around;
   h4 {
+  
     font-weight: bolder;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     color: var(--color-primary);
   }
+}
+
+
+#CravingNumber{
+  background:var(--color-base-200);
 }
 /* Details Section */
 .details {
@@ -286,23 +300,57 @@
 }
 
 /* Partner */
-.partner {
-  background-color: var(--color-primary);
-  color: var(--color-primary-content);
+
+
+#outerdiv{
+  background: var(--color-primary);
+  h4{
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+ #outerdiv,p{
+  color:var(--color-base-300);
+ }
+
+  button,btn{
+  color:var(--color-primary);
+  background:var(--color-base-200);
+  font-weight: bold;
+  font-size:larger;
+ }
+ button:hover{
+  color: var(--color-pink);
+ }
+  
+}
+
+#partner{
+  color: var(--color-primary);
+  
+
+
+
+}
+/* .partner {
+
+  color: var(--color-primary);
 
   #partner-btn {
     background-color: var(--color-base-100);
     color: var(--color-primary);
   }
+  #partner-btn:hover{
 
-  .partner-para {
-    color: var(--color-base-100);
+    color: var(--color-base-300);
   }
-}
+
+ 
+} */
+
 
 /* Footer section */
 .footer-section {
-  background-color: var(--color-neutral);
+  background-color: var(--color-secondary);
 
   .footer-div {
     color: var(--color-primary-content);
