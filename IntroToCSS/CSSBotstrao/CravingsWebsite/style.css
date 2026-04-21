@@ -448,19 +448,53 @@ footer {
   margin-top:20px;
   /* top: 25%; */
 }
-.feedback-input{
- 
- 
-  /* select{
-    padding: 10px;
-    
-   border-radius: 5px;
-   
-  
-  } */
+.help-div {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 70%;
+
+
+
+
 }
 
+#SupportTicket{
+  display: grid;
+  w
+  
+
+  h2{
+    font-weight: bolder;
+    font-size: larger;
+    
+    
+  }
+  
+  input,textarea,select{
+    padding: 10px;
+    border: 3px solid  var(--color-error);
+   /* border-color: var(--color-error); */
+    border-radius: 8px;
+    width: 100%;
+    
+  }
+
+  button{
+    color: var(--color-base-100);
+    background: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 150%;
+  }
+
+
+}
 .login-div,
+
 .register-div,
 .feedback-div,
 .contact-div {
@@ -705,4 +739,12 @@ ul li::marker {
 .hero-img {
   height: 100vh;
   object-fit: cover;
+}
+
+
+.custom-line {
+
+  color:var(--color-base-100);   /* line color */
+  opacity:1;     /* important: full dark */
+  width: 5px;
 }
