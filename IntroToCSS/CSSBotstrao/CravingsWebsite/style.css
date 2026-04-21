@@ -325,8 +325,13 @@
 }
 
 #partner{
-  color: var(--color-primary);
-  
+  /* color: var(--color-primary); */
+  background: var(--color-primary);
+  .partner-div{
+    
+
+  color: var(--color-base-100);
+  }
 
 
 
@@ -350,7 +355,7 @@
 
 /* Footer section */
 .footer-section {
-  background-color: var(--color-secondary);
+  background-color: var(--color-neutral);
 
   .footer-div {
     color: var(--color-primary-content);
@@ -436,6 +441,23 @@ footer {
 .login-div {
   left: 8%;
   top: 13%;
+}
+
+.feedback-div{
+  right: 8%;
+  margin-top:20px;
+  /* top: 25%; */
+}
+.feedback-input{
+ 
+ 
+  /* select{
+    padding: 10px;
+    
+   border-radius: 5px;
+   
+  
+  } */
 }
 
 .login-div,
