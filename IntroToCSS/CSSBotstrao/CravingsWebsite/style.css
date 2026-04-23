@@ -336,23 +336,6 @@
 
 
 }
-/* .partner {
-
-  color: var(--color-primary);
-
-  #partner-btn {
-    background-color: var(--color-base-100);
-    color: var(--color-primary);
-  }
-  #partner-btn:hover{
-
-    color: var(--color-base-300);
-  }
-
- 
-} */
-
-
 /* Footer section */
 .footer-section {
   background-color: var(--color-neutral);
@@ -448,22 +431,49 @@ footer {
   margin-top:20px;
   /* top: 25%; */
 }
-.help-div {
+.help-center {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
+
+  h2{
+    color: var(--color-primary);
+    font-weight:bold;
+    
+  }
 
 
 
+ /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+
+
+#mainouterdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
 }
 
-#SupportTicket{
+#divclass{
   display: grid;
-  w
+  width: 90%;
+ #accordion{
+  width: 100%;
+  padding: 3px 28px;
+  
+   .accordion-header{
+    background-color: var(--color-base-content);
+    color: var(--color-secondary);
+  }
+ }
   
 
   h2{
@@ -473,12 +483,31 @@ footer {
     
   }
   
+}
+#SupportTicket{
+ 
+  width: 100%;
+ 
+
+  .support{
+     display: grid;
+      gap: 3px;
+
+
+     
+  h2{
+    font-weight: bolder;
+    font-size: larger;
+    
+    
+  }
+  
   input,textarea,select{
-    padding: 10px;
+    padding: 10px 20px;
     border: 3px solid  var(--color-error);
    /* border-color: var(--color-error); */
     border-radius: 8px;
-    width: 100%;
+    width: 70%;
     
   }
 
@@ -487,9 +516,13 @@ footer {
     background: var(--color-primary);
     border: none;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
     height: 150%;
   }
+  }
+  
+  
+
 
 
 }
@@ -744,7 +777,10 @@ ul li::marker {
 
 .custom-line {
 
-  color:var(--color-base-100);   /* line color */
-  opacity:1;     /* important: full dark */
-  width: 5px;
+  color:var(--color-primary);   /* line color */
+  opacity:1;   /* important: full dark */
+  /* width: 5px;/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
