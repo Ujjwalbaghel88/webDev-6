@@ -67,19 +67,20 @@
         </div>
         <!-- welcome back section  -->
         <!-- <div class="help-div card bg-transparent border border-1 rounded-2  position-absolute"> -->
-            <div class="help-div  position-absolute bg-transparent rounded-2 border border-2 translate-middle">
+            <div class="help-center  position-absolute bg-transparent rounded-2 border border-2 translate-middle">
              
-          <h2 class="text-center display-5 text-light">Help Center</h2>
+          <h2 class="text-center display-5 "> <i class="bi bi-question-circle-fill"></i> Help Center</h2>
           <p class="text-center text-light">Browse FAQs or submit a support ticket below</p>
           
-            <div class="d-flex justify-content-between  align-items-center">
-                <div><h2 class="text-light">Frequently asked questions</h2>
+            <div class=" align-items-center" id="mainouterdiv">
+                <div class="w-100">
+                  <h2 class=" text-light">Frequently asked questions</h2>
                 
-                 <div class="pt-2 d-grid gap-2">
-                      <div class="accordion" id="privacyAccordion">
+                 <div class="pt-2  gap-2" id="divclass">
+                      <div id="accordion">
                         <div class="rounded-1 overflow-hidden border">
                           <h2
-                            class="accordion-header d-flex justify-content-between align-items-center px-2"
+                            class="accordion-header d-flex justify-content-between align-items-center px-2 fw-bolder fs-2"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#collapseOne"
@@ -88,7 +89,7 @@
                               class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center"
                             >
                               <div>
-                                <i class="fa-solid fa-store fs-6"></i>
+                                <i class="bi  bi-bag"></i>
                                 <span class="fs-6"
                                   >How do I track my order?</span
                                 >
@@ -102,8 +103,7 @@
                             data-bs-parent="#privacyAccordion"
                           >
                             <div class="accordion-body bg-secondary text-white">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Facere voluptates sequi
+                             Go to your dashboard --- Order abd click on the active order to see live tracking
                             </div>
                           </div>
                         </div>
@@ -113,8 +113,8 @@
                         class="d-flex w-100 justify-content-between align-items-center"
                       >
                         <div class="w-100">
-                          <div class="accordion" id="privacyAccordion">
-                            <div class="rounded-1 overflow-hidden border">
+                          <div id="accordion">
+                            <div class=" rounded-1 overflow-hidden border ">
                               <h2
                                 class="accordion-header d-flex justify-content-between align-items-center px-2"
                                 type="button"
@@ -125,7 +125,7 @@
                                   class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100"
                                 >
                                   <div>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="bi bi-wallet"></i>
                                     <span class="fs-6"
                                       >How do I get a refund?</span
                                     >
@@ -154,7 +154,7 @@
                         class="d-flex justify-content-between align-items-center"
                       >
                         <div class="w-100">
-                          <div class="accordion" id="privacyAccordion">
+                          <div id="accordion">
                             <div class="rounded-1 overflow-hidden border">
                               <h2
                                 class="accordion-header d-flex justify-content-between align-items-center px-2"
@@ -166,7 +166,7 @@
                                   class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100"
                                 >
                                   <div>
-                                    <i class="fa-solid fa-motorcycle"></i>
+                                    <i class="bi bi-bicycle"></i>
                                     <span class="fs-6"
                                       >My rider is late. What do I do?</span
                                     >
@@ -194,7 +194,7 @@
                         class="d-flex justify-content-between align-items-center"
                       >
                         <div class="w-100">
-                          <div class="accordion" id="privacyAccordion">
+                          <div id="accordion">
                             <div class="rounded-1 overflow-hidden border">
                               <h2
                                 class="accordion-header d-flex justify-content-between align-items-center px-2"
@@ -206,7 +206,7 @@
                                   class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100"
                                 >
                                   <div>
-                                    <i class="fa-solid fa-user"></i>
+                                    <i class="bi bi-person"></i>
                                     <span class="fs-6"
                                       >How do I update my account info?</span
                                     >
@@ -236,11 +236,14 @@
 
 
                 <!-- VERTICAL LINE -->
-    <div class="vr custom-line mx-4"></div>
+             <div class="vr custom-line mx-4"></div>
 
-    <!-- Second Div  -->
+             <!-- Second Div  -->
                 
-                <div id="SupportTicket" class="w-50 gap-3  "><h2>Submit a Support Ticekt </h2>
+               <div id="SupportTicket" >
+
+                 <div  class= "support w-100">
+                  <h2>Submit a Support Ticekt </h2>
                 
             
                       <input type="text" placeholder="Enter yout full name">
@@ -258,7 +261,7 @@
                     </select>
 
                     <input type="text" placeholder="eg. ORD-00123">
- <textarea name="" id="">Please describe your problem in details</textarea>
+                 <textarea name="" id="">Please describe your problem in details</textarea>
 
                     <div id="btn" class="">
                         <button>Submit TIcket</button>
@@ -266,6 +269,7 @@
                 
                  
                 </div>
+               </div>
             </div>
         </div>
       
