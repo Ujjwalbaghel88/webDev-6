@@ -23,7 +23,6 @@
   </head>
   <body>
     <!-- Header Part -->
-
     <div
       id="header"
       class="d-flex justify-content-between align-items-center shadow-md"
@@ -56,86 +55,97 @@
       </div>
     </div>
     <main>
-      <div
-        class="d-flex align-items-center login position-relative bg-light-subtle"
-      >
-        <div class="login-bg">
-          <img
-            src="../CravingsWebsite/images/foodTable.webp"
-            alt="FoodTable"
-            class="object-fit-cover"
-          />
-        </div>
-        <div
-          class="d-flex register-div card position-absolute flex-column gap-2 px-5 py- rounded-3 mx-2 bg-light ms-auto me-4"
-        >
-          <h1 class="text-center text-danger mt-1 fw-bold">Create Account</h1>
-          <p class="text-center">Join us a Customer,Restaurant,or Rider</p>
-
-          <label class="form-label fw-medium">Register as:</label>
-          <div class="d-flex gap-3 mb-2">
-            <div><input type="radio" name="role" checked /> Customer</div>
-            <div><input type="radio" name="role" /> Restaurant</div>
-            <div><input type="radio" name="role" /> Rider</div>
+      <!-- Hero section -->
+      <section>
+        <div class="about-hersection position-relative">
+          <div class="privacy-bg">
+            <img
+              src="./images/commonBG.avif"
+              alt="FoodTable"
+              class="object-fit-cover opacity-50"
+            />
           </div>
-
-          <!-- Full Name -->
-          <input
-            type="text"
-            class="form-control mb-1 py-2"
-            placeholder="Enter Your full name"
-          />
-          <!-- Enter Email -->
-          <input
-            type=" email"
-            class="form-control mb-2 py-2"
-            placeholder="Enter Your email"
-          />
-          <!-- Phone Number -->
-          <input
-            type="number"
-            class="form-control mb-2 py-2"
-            placeholder="Enter your phone number"
-          />
-          <!-- Password -->
-          <input
-            type="password"
-            class="form-control mb-2 py-2"
-            placeholder="Enter your password"
-          />
-          <!-- Confirm your password -->
-          <input
-            type="password"
-            class="form-control mb-2 py-2"
-            placeholder="Confirm your password"
-          />
 
           <div
-            class="p-2 d-flex justify-content-between align-items-center mb-3 w-100"
+            class="about-herocontent position-absolute d-grid w-50 justify-content-center text-center gap-2"
           >
-            <div class="d-flex gap-2">
-              <input type="checkbox" />
-              <span
-                >I agree to the
-                <a class="text-danger text-decoration-none fw-bold" href="#"
-                  >terms and conditions</a
-                >
-              </span>
+            <div class="privacy-value">
+              <span class="display-6"><i class="bi bi-map-fill"></i></span>
+              <h1 class="display-5 text-white fw-bold">
+                Site <span>Map</span>
+              </h1>
+              <p class="text-light opacity-75">
+                A complete overview of every page on the Cravings platform.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <button class="btn btn-danger w-100">Register</button>
+      <!-- Second Part Div  -->
+
+      <div id="CenterDiv">
+        <div
+          class="footer-outer d-flex justify-content-around align-items-center d-grid pt-4"
+        >
+          <div class="quick-links d-grid">
+            <h6 class="mb-1 fw-bold">MAIN</h6>
+            <hr />
+
+            <span> <i class="bi bi-house"></i> Home</span>
+            <span><i class="bi bi-info-circle-fill"></i>About Cravings</span>
+            <span> <i class="bi bi-bag-fill"></i> Order Now</span>
           </div>
 
-          <div class="d-flex align-items-center fs-6 mb-2">
-            <span class="opacity-75">Already registerd?</span>
-            <a href="#" class="ms-3 text-decoration-none text-danger fw-bold"
-              >Login here</a
+          <div class="quick-links d-grid">
+            <h6 class="mb-1 fw-bold">SUPPORTS</h6>
+            <hr />
+            <span><i class="bi bi-envelope"></i> Contact Us</span>
+            <span><i class="bi bi-chat-dots"></i> feedback</span>
+            <span><i class="bi bi-question-circle"></i> Help Center</span>
+            <span></span>
+          </div>
+
+          <div class="quick-links d-grid">
+            <h6 class="mb-1 fw-bold">ACCOUNTS</h6>
+            <hr />
+            <span><i class="bi bi-box-arrow-in-right"></i> login</span>
+            <span
+              ><i class="bi bi-person-plus-fill"></i> Register as customer</span
             >
+            <span><i class="bi bi-fork-knife"></i> Register as Restaurant</span>
+            <span
+              ><i class="bi bi-person-plus-fill"></i> Register as Rider</span
+            >
+          </div>
+
+          <div class="quick-links d-grid">
+            <h6 class="mb-1 fw-bold">LEGAL</h6>
+            <hr />
+
+            <span><i class="bi bi-shield-shaded"></i> Privacy Policy</span>
+            <span
+              ><i class="bi bi-file-earmark-text"></i> Terms of Service</span
+            >
+            <span><i class="bi bi-map-fill"></i> Site Map</span>
           </div>
         </div>
       </div>
+      <!-- rating section -->
+
+      <section id="partner">
+        <div class="partner-div d-grid gap-3 justify-content-center">
+          <p class="text-center text-dark p-4 pt-5">
+            Can't find what you're looking for?
+            <a
+              href="./helpcenter.html"
+              class="text-center text-light text-decoration-none fw-bold"
+            >
+              Visit our Help Center
+            </a>
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
