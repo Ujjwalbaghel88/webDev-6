@@ -16,10 +16,10 @@ console.log(abc); //abc that a callBackFunction
 
 abc();
 
-    // const addarrow = (a, b) => {
-    //   return a + b;
-    // };
-    // console.log(addarrow(5, 6));
+    const addarrow = (a, b) => {
+      return a + b;
+    };
+    console.log(addarrow(5, 6));
 
     // ArrowFunction this here 
 const addarrow = (a, b) => a + b;
