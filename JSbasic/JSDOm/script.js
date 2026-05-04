@@ -1,5 +1,5 @@
 function Submit(){
-    console.log("Submit Button Clicked");
+   //  console.log("Submit Button Clicked");
 
     const fn = document.getElementById("fullName").value;
     console.log(fn);
@@ -9,16 +9,40 @@ function Submit(){
      document.getElementById("fullName").value ="";
 
 
-       document.getElementById("myData2").innerText =fn;
+
+
+
+
+// 2nd
+     
+    const pn = document.getElementById("city").value;
+    console.log(pn);
+
+       document.getElementById("myData2").innerText =pn;
+     document.getElementById("city").value =""; 
+
+   //   3rd 
+     
+    const gn = document.getElementById("email").value;
+    console.log(gn);
+
+        document.getElementById("myData3").innerText =gn;
      document.getElementById("email").value ="";
 
-        document.getElementById("myData3").innerText =fn;
+   //   4th 
+
+   
+    const hn = document.getElementById("password").value;
+    console.log(hn);
+        document.getElementById("myData4").innerText =hn;
      document.getElementById("password").value ="";
 
-        document.getElementById("myData4").innerText =fn;
-     document.getElementById("city").value ="";
+   //   5th 
 
-        document.getElementById("myData5").innerText =fn;
+   
+    const tn = document.getElementById("feedback").value;
+    console.log(tn);
+        document.getElementById("myData5").innerText =tn;
      document.getElementById("feedback").value ="";
 
 
