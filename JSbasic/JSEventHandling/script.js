@@ -20,7 +20,6 @@ function BulbGreen() {
 
 document.getElementById("bulbgreen").addEventListener("click", BulbGreen);
 
-
 // document.getElementById("bulb1Color").addEventListener("change", ChangeBulbColor);
 
 // function ChangeBulbColor(){
@@ -28,31 +27,24 @@ document.getElementById("bulbgreen").addEventListener("click", BulbGreen);
 //     document.getElementById("bulb1Color").style.backgroundColor= color;
 // }
 
-
 document.getElementById("BgColor").addEventListener("change", BackgroundColor);
-function BackgroundColor(){
-     const color = document.getElementById("BgColor").value;
-    document.getElementById("box1").style.backgroundColor= color;
+function BackgroundColor() {
+  const color = document.getElementById("BgColor").value;
+  document.getElementById("box1").style.backgroundColor = color;
 }
-
-
-
 
 document.getElementById("headColor").addEventListener("change", HeadingColor);
-function HeadingColor(){
-     const color = document.getElementById("headColor").value;
-    document.getElementById("head1").style.color= color;
+function HeadingColor() {
+  const color = document.getElementById("headColor").value;
+  document.getElementById("head1").style.color = color;
 }
 
-
-
-document.getElementById("paraColor").addEventListener("change",ParagraphColor);
-function ParagraphColor(){
-     const color = document.getElementById("paraColor").value;
-    document.getElementById("para").style.color= color;
+document.getElementById("paraColor").addEventListener("change", ParagraphColor);
+function ParagraphColor() {
+  const color = document.getElementById("paraColor").value;
+  document.getElementById("para").style.color = color;
 }
 
-function resetAll(){
-    window.location.reload();
+function resetAll() {
+  window.location.reload();
 }
-
