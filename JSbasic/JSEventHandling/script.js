@@ -14,12 +14,17 @@ function Bulb2OFF() {
   document.getElementById("bulb1").style.backgroundColor = "blue";
 }
 
+document.getElementById("bulbgreen").addEventListener("click", BulbGreen);
+
 function BulbGreen() {
   document.getElementById("bulb1").style.backgroundColor = "green";
 }
 
-document.getElementById("bulbgreen").addEventListener("click", BulbGreen);
-
+document.getElementById("bulb1Color").addEventListener("change", ChangeBulbColor);
+function ChangeBulbColor(){
+  const color=document.getElementById("bulb1Color").value;
+  document.getElementById("bulb1").style.backgroundColor=color;
+}
 // document.getElementById("bulb1Color").addEventListener("change", ChangeBulbColor);
 
 // function ChangeBulbColor(){
