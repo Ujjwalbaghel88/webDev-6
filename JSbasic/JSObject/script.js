@@ -81,3 +81,10 @@ console.log(ab);
 console.log(ab.split(" "));
 
 
+let str="This is string"
+console.log(str.charAt(5));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+
+
