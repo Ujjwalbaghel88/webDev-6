@@ -1,3 +1,24 @@
+#main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   padding-top: 10px;
+   width: 100%;
+
+}
+
+
+
+
+
+
+#outerdiv{
+    border: 3px dotted black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
 #bulb1 {
   width: 100px;
   height: 100px;
@@ -5,7 +26,7 @@
   margin-bottom: 15px;
   border-radius: 100%;
   border: black solid 2px;
-  border-radius: 10px;
+  border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,13 +38,16 @@
 .box{
     width: 50px;
     height: 30px;
-    border: black solid 2px;
+    border: 1px solid tan;
+    border-radius: 5px;
     margin: 10px ;
+
 
 }
 #parentBox{
     display: flex;
     gap: 10px;
+    
 }
 #redbox{
     background: red;
