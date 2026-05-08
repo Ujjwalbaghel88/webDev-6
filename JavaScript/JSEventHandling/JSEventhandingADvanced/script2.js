@@ -32,8 +32,4 @@ document.querySelector("form").addEventListener("reset", (event) => {
 document.addEventListener("keydown", (event) => {
   let keyPress = event.key;
   console.log(keyPress);
-
-
 });
-
-
