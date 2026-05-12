@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Travel Bill Calculator</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    class="min-vh-100 d-flex justify-content-center align-items-center bg-light p-3"
+  >
+    <div class="  border rounded-5 p-4 travel-card bg-warning">
+      <h1 class="text-center fw-bold mb-2 text-danger">
+        Travel Bill Calculator
+      </h1>
+
+      <p class="text-center text-secondary mb-4">
+        Calculate your travel expense easily
+      </p>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold"> Total Distance (km) </label>
+
+        <input
+          type="number"
+          id="distance"
+          class="form-control form-control-lg rounded-4"
+          placeholder="Enter distance"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold"> Vehicle Mileage (KM/L) </label>
+
+        <input
+          type="number"
+          id="mileage"
+          class="form-control form-control-lg rounded-4"
+          placeholder="Enter mileage"
+        />
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label fw-semibold"> Fuel Price (₹/L) </label>
+
+        <input
+          type="number"
+          id="fuelPrice"
+          class="form-control form-control-lg rounded-4"
+          placeholder="Enter fuel price"
+        />
+      </div>
+
+      <button
+        class="btn btn-success btn-lg rounded-4 fw-bold w-100"
+        onclick="calculateTravelBill()"
+      >
+        Calculate Expense
+      </button>
+
+      <div
+        id="result"
+        class="alert alert-light rounded-4 mt-4 text-center fw-bold d-none"
+      ></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
