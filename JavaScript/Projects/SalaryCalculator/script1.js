@@ -15,14 +15,6 @@ const resultHra = document.getElementById("resultHra");
 const resultDa = document.getElementById("resultDa");
 const resultGross = document.getElementById("resultGross");
 
-/*
-  Salary Rules:
-  HRA = 20% of Basic
-  DA  = 10% of Basic
-  Gross Salary = Basic + HRA + DA
-*/
-
-// Standalone Function
 function calculateGrossSalary(basic) {
   const hra = basic * 0.2;
 
