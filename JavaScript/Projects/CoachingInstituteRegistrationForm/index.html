@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="bg-primary-subtle p-3">
+        <h2 class="text-center fw-bold text-black">Choching Institute Form</h2>
+      </div>
+    </header>
+
+    <main>
+        <div class="container mt-4 p-5 rounded border shadow bg-light">
+      <form class="d-flex" id="registrationForm">
+        <!-- <div class="">
+            <label for="personInfo">
+                Personal Info
+            </label> <br>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" placeholder="Enter your Name">
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Enter your Email">
+        </div> -->
+
+        <section class="bg-secondary p-3 rounded border shadow ">
+          <fieldset>
+            <legend>Personal Details</legend>
+            <div class="p-2 mt-2">
+              <label for="fullName" class="form-label">Full Name:</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="form-control"
+                placeholder="Rahul"
+              />
+              <span class="text-danger small " id="fullNameError">nks</span>
+            </div>
+             <div class="p-2 mt-2">
+              <label for="email" class="form-label">Email Name:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+              <span class="text-danger small " id="emialError">nks</span>
+            </div>
+
+             <div class="p-2 mt-2 ">
+              <label for="number" class="form-label">Number:</label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                class="form-control"
+                placeholder="Enter your number"
+              />
+              <span class="text-danger small " id="numberError">nks</span>
+            </div>
+
+
+             <div class="p-2 mt-2">
+              <label for="dateofbirth" class="form-label">Date of Birth:</label>
+            <input type="date" name="date" id="date" class="form-control">
+              <span class="text-danger small " id="dateError">nks</span>
+            </div>
+
+
+          </fieldset>
+          <!-- Second fieldset  -->
+           
+        </section>
+
+         <section class="bg-secondary-subtle p-3 rounded border shadow">
+
+            <fieldset>
+             <legend>Academic Details:</legend>
+              <div class="p-2 mt-2">
+              <label for=Qualification" class="form-label">Qualification:</label>
+             <select name="quali" id="quali" class="form-control">
+
+                <option value="">Last Complete Qualification</option>
+                <option value="">12th</option>
+             </select>
+             <label for="grade" class="form-label">Percentage/Grade</label>
+            <select name="grade" id="grade" class="form-control">
+                <option value="">select grade</option>
+                <option value="">85</option>
+                <option value="">75</option>
+            </select>
+              <span class="text-danger small " id="qualiError">nks</span>
+            </div>
+
+           </fieldset>
+
+         </section>
+
+
+          <section class="bg-primary-subtle p-3 rounded border shadow">
+
+            <fieldset>
+             <legend>Course Info:</legend>
+              <div class="p-2 mt-2">
+              <label for="course" class="form-label">Preferred Course:</label>
+             <select name="courses" id="courses" class="form-control">
+
+                <option value="">--Select--Course</option>
+                <option value="">IIT-JEE</option>
+                <option value="">Neet</option>
+                <option value="">CUET</option>
+             </select>
+             <label for="timing" class="form-label">Batch Timing:</label>
+            <select name="time" id="time" class="form-control">
+                <option value="">--Select--Timing</option>
+                <option value="">Morning</option>
+                <option value="">Afternoon</option>
+                <option value="">Evening    </option>
+            </select>
+              <span class="text-danger small " id="timeError">nks</span>
+            </div>
+
+           </fieldset>
+
+         </section>
+
+          <section class="bg-success-subtle p-3 rounded border shadow">
+
+            <fieldset>
+             <legend>Address:</legend>
+              <div class="p-2 mt-2">
+              <label for="address" class="form-label">Residental Address:</label>
+              <input type="text" name="text" id="text" class="form-control">
+           
+             <label for="city" class="form-label">City:</label>
+            <select name="city" id="city" class="form-control">
+                <option value="">--Select--City</option>
+                <option value="">Bhopal</option>
+                <option value="">Delhi</option>
+                <option value="">Noida</option>
+            </select>
+
+            <label for="pincode">Pin Code</label>
+            <input type="number" class="form-control" name="number" id="number">
+              <span class="text-danger small " id="pinError">nks</span>
+            </div>
+
+           </fieldset>
+
+         </section>
+
+
+
+
+          <section class="bg-danger-subtle p-3 rounded border shadow">
+
+            <fieldset>
+             <legend>Guaridian Details:</legend>
+              <div class="p-2 mt-2">
+              <label for="guradiName" class="form-label">Guradian Full Name:</label>
+              <input type="text" name="text" id="text" class="form-control">
+           
+             <label for="contNum" class="form-label">Guradian Contact Number:</label>
+            <input type="number" name="number" id="contnumber" class="form-control">
+
+            
+              <span class="text-danger small " id="contactError">nks</span>
+            </div>
+
+           </fieldset>
+
+         </section>
+
+
+          <section class="bg-warning-subtle p-3 rounded border shadow">
+
+            <fieldset>
+             <legend>Additional Info:</legend>
+              <div class="p-2 mt-2">
+              <label for="hereus" class="form-label" >How did you hear about us?</label>
+             <select name="aboutUs" id="aboutUs" class="form-control">
+                <option value=""></option>
+                <option value="">Social media</option>
+                <option value="">youtube</option>
+                <option value="">Insta</option>
+             </select>
+             <label for="require" class="form-label">Special Requirements:</label>
+           <select name="require" id="specialrequire" class="form-control">
+            <option value=""></option>
+            <option value="">Dance</option>
+            <option value="">N/A</option>
+           </select>
+            
+              <span class="text-danger small " id="contactError">nks</span>
+            </div>
+
+           </fieldset>
+
+         </section>
+      </form>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
