@@ -12,20 +12,19 @@ function Login() {
     element.innerText = "";
   });
 
-//   if (!/^[A-Za-z\s]+$/.test(fn)) {
-//     document.getElementById("nameError").innerText = "Invalid name";
-//   }
+  //   if (!/^[A-Za-z\s]+$/.test(fn)) {
+  //     document.getElementById("nameError").innerText = "Invalid name";
+  //   }
   if (!/^[A-Za-z\.\_\d]+@gmail.com$/.test(em)) {
     document.getElementById("emailError").innerText = "Invalid Email";
   }
-  if(/^.{6,}$/.test(ps)){
+  if (/^.{6,}$/.test(ps)) {
     document.getElementById("passwordError").innerText = "Invalid password";
-
   }
 
-//   if (!/^[6-9]\d{9}$/.test(ph)) {
-//     document.getElementById("numberError").innerText = "Invalid Phone";
-//   }
+  //   if (!/^[6-9]\d{9}$/.test(ph)) {
+  //     document.getElementById("numberError").innerText = "Invalid Phone";
+  //   }
 }
 
 function Register() {
