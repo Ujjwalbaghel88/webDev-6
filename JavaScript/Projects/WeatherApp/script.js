@@ -14,9 +14,12 @@ async function getWeather() {
 
   //console.log(data);
 
+
+  
   const temperature = data.main.temp - 273.15;
 
   document.getElementById("Temperature").innerText = temperature.toFixed(2);
+  
 }
 
 async function getGeoLocation(city) {
