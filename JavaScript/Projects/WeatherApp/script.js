@@ -19,6 +19,10 @@ async function getWeather() {
   const temperature = data.main.temp - 273.15;
 
   document.getElementById("Temperature").innerText = temperature.toFixed(2);
+
+  const wind = data.main.wind;
+
+  document.getElementById("wind").innerText = wind.toFixed(2);
   
 }
 
