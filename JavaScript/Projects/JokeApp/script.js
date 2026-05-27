@@ -6,9 +6,10 @@ async function GetNewjoke() {
 
   const data = await response.json();
 
-  // console.log(data);
+  console.log(data);
 
   document.getElementById("setup").innerText = data.joke || data.setup;
 
   document.getElementById("punchline").innerText = data.punchline || "";
+
 }
