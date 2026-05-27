@@ -148,6 +148,7 @@ async function convertCurrency() {
     );
 
     const data = await response.json();
+    console.log(data);
 
     // GET RATE
 
@@ -170,29 +171,5 @@ async function convertCurrency() {
     errorMessage.innerText = "Something went wrong. Please try again.";
   } finally {
     convertBtn.innerText = "Convert Currency";
-  }
-}
-
-// SWAP CURRENCY
-
-function swapCurrency() {
-  const temp = country1.value;
-
-  country1.value = country2.value;
-
-  country2.value = temp;
-
-  // UPDATE FLAGS
-
-  updateFlag(country1, flag1);
-
-  updateFlag(country2, flag2);
-
-  // AUTO CONVERT
-
-  const amount = document.getElementById("orgAmount").value;
-
-  if (amount) {
-    convertCurrency();
   }
 }
