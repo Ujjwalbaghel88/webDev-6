@@ -5,9 +5,8 @@ body {
 
 .main-heading {
   background-color: orange;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
-  font-size: 50px;
   font-weight: bold;
 }
 
@@ -16,7 +15,6 @@ body {
   height: 80px;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid white;
 }
 
 .converter-box {
