@@ -5,7 +5,8 @@ async function GetNewjoke() {
   const response = await fetch(API_URL);
 
   const data = await response.json();
-  console.log(data);
+
+  // console.log(data);
 
   document.getElementById("setup").innerText = data.joke || data.setup;
 
