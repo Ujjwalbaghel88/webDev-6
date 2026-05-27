@@ -16,44 +16,62 @@
     />
   </head>
   <body>
-    <header class="bg-primary text-light p-3 text-center position-sticky ">
-      <h2 class="p-2 fw-bold">Weather Report🌩️🌧️🌈</h2>
+    <header class="bg-info bg-opacity-50 text-light p-3 text-center position-sticky">
+      <h2 class="p-2  text-dark fw-bold">Weather Report🌩️🌧️🌈</h2>
     </header>
-      
-       
 
     <div class="">
-         <img src="./image.png" class="w-100 position-fixed min-vh-100 position-absolute">
+      <img
+        src="./image.png"
+        class="w-100 position-fixed min-vh-100 position-absolute"
+      />
 
-
-        
-    <div class="d-flex justify-content-center p-lg-5 position-relative">
-    
-      <div>
-        <img
-          src="https://media.istockphoto.com/id/1323823418/photo/low-angle-view-thermometer-on-blue-sky-with-sun-shining.jpg?s=612x612&w=0&k=20&c=LwLCGF902C-DNwKgCMCR12zFnB4g1INWzlk1JPOidRk="
-          class=" w-50"
-          alt="weatherImage"
-        />
-      </div>
-      <div class="d-grid p-2 border border-3  rounded-3 border-info">
-        <div class="d-flex p-2">
-          <label class="p-2 fw-bold">City Name:</label>
-
-          <input type="text" id="cityName" class="form-control w-50 h-50" />
+      <div class="d-flex justify-content-center p-5  position-relative">
+        <div>
+          <img
+            src="https://media.istockphoto.com/id/1323823418/photo/low-angle-view-thermometer-on-blue-sky-with-sun-shining.jpg?s=612x612&w=0&k=20&c=LwLCGF902C-DNwKgCMCR12zFnB4g1INWzlk1JPOidRk="
+            class="w-50"
+            alt="weatherImage"
+          />
         </div>
+        <div class="d-grid p-2 border border-3 rounded-3 border-info gap-3">
+          <div class="d-flex p-2">
+            <label class="p-2 fs-4 fw-bold">City Name:</label>
 
-        <div class="p-2">
-          <button class="btn btn-info p-2" onclick="getWeather()">
-            Get Weather
-          </button>
-          <label class="w-50 p-2 fw-bold"
-            >Temp : <span id="Temperature">30</span>ºC🌤️</label
+            <input type="text" id="cityName" class="form-control w-50" />
+          </div>
+
+          <div
+            class="bg-info   bg-opacity-25 rounded-2 d-flex align-items-center"
           >
+            <i class="bi bi-droplet-fill fs-1 me-3 text-info"></i>
+            <div>
+              <h5 class="mt-0">Humidity</h5>
+              <p class="fs-4 mb-0" id="Humidity">--</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-info bg-opacity-25 rounded-3 d-flex align-items-center"
+          >
+            <i class="bi bi-wind fs-1 me-3 text-secondary"></i>
+            <div>
+              <h5 class="mt-0">Wind</h5>
+              <p class="fs-4 mb-0" id="Wind">--</p>
+            </div>
+          </div>
+
+          <div class="p-2 d-grid">
+            <button class="btn btn-info p-2" onclick="getWeather()">
+              Get Weather
+            </button>
+            <label class=" text-center fs-5 p-2 fw-bold"
+              >Temp : <span id="Temperature">30</span>ºC🌤️</label
+            >
+          </div>
         </div>
       </div>
     </div>
-       </div>
 
     <br />
 

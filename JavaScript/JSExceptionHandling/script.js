@@ -15,10 +15,10 @@ async function DoCalculation() {
 }
 
 function testingData(Data) {
-  //   try {
-  //     console.log(data);
-  //   } catch (e) {
-  //     throw e;
-  //   }
+    // try {
+    //   console.log(data);
+    // } catch (e) {
+    //   throw e;
+    // }
   throw new Error("Something Happens");
 }

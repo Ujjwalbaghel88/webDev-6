@@ -12,18 +12,22 @@ async function getWeather() {
   const response = await fetch(WEATHER_API);
   const data = await response.json();
 
-  //console.log(data);
+  console.log(data);
 
-
-  
   const temperature = data.main.temp - 273.15;
+
+  const humidity = data?.main?.humidity ?? null;
+  const windSpeed = data?.wind?.speed ?? null; // in m/s
 
   document.getElementById("Temperature").innerText = temperature.toFixed(2);
 
-  const wind = data.main.wind;
+  const humEl = document.getElementById("Humidity");
+  if (humEl) humEl.innerText = humidity !== null ? `${humidity}%` : "--";
 
-  document.getElementById("wind").innerText = wind.toFixed(2);
-  
+  const windEl = document.getElementById("Wind");
+  if (windEl)
+    windEl.innerText =
+      windSpeed !== null ? `${windSpeed.toFixed(2)} m/s` : "--";
 }
 
 async function getGeoLocation(city) {
