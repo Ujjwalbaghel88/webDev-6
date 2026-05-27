@@ -28,6 +28,8 @@ async function loadCountries() {
       return;
     }
 
+    
+
     uniqueCountries.add(country.Country);
 
     // COUNTRY 1 OPTION
@@ -92,7 +94,7 @@ country2.addEventListener("change", () => {
 
 // CONVERT CURRENCY
 
-async function convertCurrency() {
+async function convertCurrency() { 
   errorMessage.innerText = "";
 
   document.getElementById("newAmount").innerText = "";
