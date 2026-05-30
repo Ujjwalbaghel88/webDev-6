@@ -19,7 +19,6 @@
   font-family: "Inter";
 }
 
-
 body {
   overflow-x: hidden;
 }
@@ -93,10 +92,12 @@ body {
   #signup {
     border: none;
     background-color: var(--color-primary);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   #orderNow {
     border: none;
     background-color: var(--color-base-100);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 
@@ -106,8 +107,14 @@ body {
 }
 
 #search-box {
-  max-width: 500px;
+  max-width: 850px;
   width: 100%;
+  /* border: 2px solid green; */
+
+  input {
+    width: 100%;
+    padding: 2px;
+  }
 }
 
 /* Featured Restaurants */
@@ -131,6 +138,11 @@ body {
     margin: 0 2%;
   }
 
+  .headingName {
+    /* margin-left: 150px; */
+    margin-left: 0;
+    padding: 10px;
+  }
   .card-heading {
     color: var(--color-primary-content);
   }
@@ -138,10 +150,11 @@ body {
   .restaurant-available {
     color: var(--color-base-200);
     opacity: 0.8;
+    font-size: 20px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 20px;
     color: var(--color-base-content);
   }
 
@@ -231,19 +244,27 @@ body {
 
 /* Craving by the Numbers */
 
-.box-outer {
-  display: flex;
-  justify-content: space-around;
-  h4 {
-    font-weight: bolder;
-    /* font-size: xx-large; */
-    color: var(--color-primary);
+#CravingNumber {
+  background: var(--color-base-200);
+
+  .box-outer {
+    /* border: 2px solid  green; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    h4 {
+      font-weight: bolder;
+      /* font-size: xx-large; */
+      color: var(--color-primary);
+    }
+
+    .row {
+      /* border: 2px solid black; */
+      padding: 20px;
+    }
   }
 }
 
-#CravingNumber {
-  background: var(--color-base-200);
-}
 /* Details Section */
 .details {
   background-color: var(--color-base-100);
@@ -751,12 +772,17 @@ ul li::marker {
   height: 100%;
 
   z-index: 10; /* MOST IMPORTANT */
+
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 50px;
+  }
 }
 
 /* Carousel image fix */
 .hero-img {
   height: 100vh;
-    width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -777,4 +803,96 @@ ul li::marker {
   padding: 10px;
   padding-bottom: 10px;
   margin-top: 5px;
+}
+
+/* Responsive for header */
+@media (max-width: 300px) {
+  #header {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #header img {
+    width: 80px;
+  }
+}
+
+
+/* for a better Responsive for phone Code */ 
+
+/* Responsive For login,register, feedback, contact */
+
+ @media (max-width: 768px) 
+ {
+  .login-div,
+  .register-div,
+  .feedback-div,
+  .contact-div {
+    width: 90%;
+    left: 5% !important;
+    right: 5% !important;
+  }
+
+  .faq-box {
+    width: 100%;
+  }
+
+  .help-center {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-herocontent {
+    left: 5%;
+    width: 90%;
+  }
+
+  #mainouterdiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+} 
+
+/* Responsive for home page section id 33 */
+
+@media (max-width: 576px) {
+  .hero-overlay h1 {
+    font-size: 32px !important;
+  }
+
+  .herocontent {
+    width: 95%;
+    left: 10px !important;
+    right: 10px !important;
+    top: 15%;
+  }
+
+  .herocontent .search,
+  #search-box {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .headingName {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  #CravingNumber .box-outer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-available {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #CravingNumber .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
