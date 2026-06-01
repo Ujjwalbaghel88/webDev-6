@@ -1,21 +1,11 @@
-#abcd {
-  background: green;
-  text-align: center;
+a {
+  text-decoration: none !important;
 }
 
-#header {
-  text-align: center;
-  padding: 10px;
-
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background: red;
-  color: white;
+a:hover {
+  text-decoration: underline !important;
 }
-#footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-  background: blue;
-  color: white;
+
+.container {
+  height: 500px;
 }
