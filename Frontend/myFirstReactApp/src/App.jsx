@@ -1,17 +1,19 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 function App() {
   return (
     <>
       <Header />
-      <div id="abcd">My First React App</div>
-      <p className="bg-success text-white text-center">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-        dolorum sint nihil maxime debitis excepturi! Ullam recusandae
-        necessitatibus, molestias reiciendis deleniti facere! Eius labore minus
-        impedit voluptatibus! Explicabo, molestias optio.
-      </p>
-      <Footer />
+      <Home />
+      <About />
+      <ContactUs />
+      <Login />
+      <Register />
     </>
   );
 }
