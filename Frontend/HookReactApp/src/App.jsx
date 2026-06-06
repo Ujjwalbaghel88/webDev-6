@@ -1,11 +1,11 @@
 import { FaWifi } from "react-icons/fa";
-import { IoIosSave } from "react-icons/io";
+
 
 // import contactImage from "./assets/contactPage.jpg";
 import LoginPage from "./assets/pages/LoginPage";
 
 function App() {
-  const age = 5;
+  // const age = 5;
 
   return (
     <>
