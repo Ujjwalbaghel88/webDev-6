@@ -17,18 +17,7 @@ const App = () => {
         </div>
       </header>
       </div>
-      {/* <header className=" bg-[#C2410C] d-flex justify-content-between   align-items-center shadow-md ">
-        <div className="">
-          <img src={image1} className="w-20  flex-shrink-0" />
-        </div>
-
-        <div className="d-flex justify-between align-items-center gap-2 mt-2 mt-sm-0">
-          <button className="  p-2 rounded-2 text-white">Login</button>
-          <button className="bg-white p-2 rounded-2 text-amber-600">
-            Register
-          </button>
-        </div>
-      </header> */}
+     
     </>
   );
 };
