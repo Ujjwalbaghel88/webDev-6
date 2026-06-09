@@ -5,8 +5,7 @@ import home2 from "./assets/home2.jpg";
 import home3 from "./assets/home3.jpg";
 import home4 from "./assets/home4.jpg";
 import Home from "./pages/Home";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const App = () => {
   return (
@@ -15,25 +14,28 @@ const App = () => {
       {/* <div className="bg-[url('/vlcsnap-2025-10-21-19h23m08s878.png')] bg-cover flex justify-center w-full h-screen"> */}
       <header className=" bg-[#C2410C] h-15 w-100 d-flex justify-content-between shadow-md ">
         <div className="">
-          <img src={image1} className="w-25  flex-shrink-0" />
+          <img
+            src={image1}
+            className="w-24
+            flex-shrink-0"
+          />
         </div>
 
         <div className="d-flex justify-between  gap-2 ">
           <button className="  p-2 rounded-2 text-white hover:bg-amber-300 active:bg-green-300">
             Login
           </button>
-          <button className="bg-white p-2 rounded-2 text-amber-600">
+          <button className="bg-white px-4  mt-3 mb-2 mx-5 rounded text-amber-600">
             Register
           </button>
         </div>
       </header>
       {/* </div> */}
 
-      <div className="position-relative">
+      <div className="relative  w-full ">
         {/* <!-- Carousel --> */}
         <div
-          id="carouselExample"
-          className="carousel slide carousel-fade"
+          className="carousel slide carousel-fade w-full "
           data-bs-ride="carousel"
           data-bs-interval="2500"
         >
@@ -59,7 +61,7 @@ const App = () => {
           </div>
 
           {/* <!-- Images --> */}
-          <div className="carousel-inner">
+          <div className="carousel-inner w-full h-[550px]">
             <div className="carousel-item active">
               <img src={home1} className="d-block w-100 hero-img" />
             </div>
@@ -98,9 +100,10 @@ const App = () => {
         {/* <!-- Overlay Content (FIXED) --> */}
         {/* <!-- Your Favourite Food Section Header niche --> */}
         <section>
-          <div className=" flex align-items-center  text-center  position-absolute text-black">
-            <div className="container px-3">
-              <h1 className="  ">
+          {/* <div className=" absolute flex align-items-center  text-center   text-black"> */}
+          <div className="absolute flex  w-fit mx-auto align-center items-center left-110 top-30 z-10   text-center text-light">
+            <div className="">
+              <h1 className="fw-bold ">
                 Your Favorite Food,
                 <br />
                 Delivered Fast
@@ -118,7 +121,7 @@ const App = () => {
               >
                 <button
                   id="signup"
-                  className="btn text-light p-4 py-2 rounded-3"
+                  className="bg-[#C2410C] text-light p-4 py-2 rounded-3"
                   onClick={() => navigate("/register")}
                 >
                   Sign Up
@@ -126,7 +129,7 @@ const App = () => {
 
                 <button
                   id="orderNow"
-                  className="text-dark fw-bold p-4 py-2 rounded-3"
+                  className=" bg-amber-50 fw-bold p-4 py-2 text-black rounded-3"
                   onClick={() => navigate("/order")}
                 >
                   Order Now
@@ -140,7 +143,7 @@ const App = () => {
                 <i className="bi bi-search text-muted me-2"></i>
                 <input
                   id="text"
-                  className="border-0 shadow-none fs-6 fw-medium"
+                  className="border-0 placeholder:text-[#C2410C] w-full shadow-none fs-6 fw-medium"
                   placeholder="Search restaurants or dishes...."
                 />
               </div>
