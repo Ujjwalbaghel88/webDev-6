@@ -87,13 +87,13 @@ function Home() {
             
             <div className="container  ">
             
-              <h1 className="text-4xl ">
+              <h1 className="text-5xl font-bold  ">
                 Your Favorite Food,
                 <br />
                 Delivered Fast
               </h1>
 
-              <p className="text-lg md:text-2xl mt-3">
+              <p className="text-lg  mt-3">
                 Order from thousands of restaurants and get it delivered to your
                 doorstep
               </p>
@@ -105,7 +105,7 @@ function Home() {
               >
                 <button
                  
-                  className="bg-(--color-primary) text-(--color-primary-content)  p-4 py-2 rounded-3"
+                  className="bg-(--color-primary) text-(--color-primary-content) font-bold  p-4 py-2 rounded"
                   onClick={() => navigate("/register")}
                 >
                   Sign Up
@@ -113,7 +113,7 @@ function Home() {
 
                 <button
                   
-                  className="  bg-(--color-primary-content) text-(--color-base-content) fw-bold p-4 py-2 rounded-3"
+                  className="  bg-(--color-primary-content) text-(--color-base-content) font-bold p-4 py-2 rounded-"
                   onClick={() => navigate("/order")}
                 >
                   Order Now

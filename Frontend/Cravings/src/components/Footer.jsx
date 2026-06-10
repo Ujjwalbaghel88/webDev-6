@@ -13,7 +13,7 @@ function Footer() {
             </p>
             <div className="  grid mx-[9%] grid-cols-5 pt-4">
               <div className=" me-2 flex">
-                <img src={cravings} alt="footerLogo" className=" w-31.25 h-31.25" />
+                <img src={cravings} alt="footerLogo" className=" w-31.25 h-37.5" />
               </div>
               <div className=" grid">
                 <h4 className="mb-1 text-base text-white font-bold">Quick Links</h4>

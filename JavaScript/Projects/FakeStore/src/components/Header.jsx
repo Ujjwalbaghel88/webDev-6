@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
-import image1 from "../assets/image1.png";
+import image1 from "../assets/hero.png"
 
 function Header() {
   return (
     <>
+    <div className="flex bg-green-200 justify-between items-center">
+
+      <Link to={"/"}>Home</Link>
+     </div>
+
+
       <div
         id="header"
         className="flex justify-between items-center shadow-md  bg-[#C2410C]  w-full"
       >
         <Link to={"/home"}>
-          <img src={image1} className=" w-24 shrink-0" alt="" />
+          <img src={image1} className=" w-15 shrink-0" alt="" />
 
         </Link>
       
@@ -45,27 +51,9 @@ function Header() {
           </Link>
         </div>
       </div>
-      {/* <div className="bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
-        <div className="text-primary fs-4 fw-bold">My Company</div>
-
-        <div className="d-flex gap-4">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/product"}>Product</Link>
-          <Link to={"/contact-us"}>Contact Us</Link>
-        </div>
-
-        <div className="d-flex gap-3">
-          <Link to={"/login"}>
-            <button className="btn btn-outline-primary">Login</button>
-          </Link>
-          <Link to={"/register"}>
-            <button className="btn btn-primary">Register</button>
-          </Link>
-        </div>
-      </div> */}
+   
+    
     </>
-  );
+  )
 }
-
 export default Header;
