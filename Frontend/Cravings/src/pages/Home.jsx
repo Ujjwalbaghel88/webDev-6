@@ -14,7 +14,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="herosection position-relative">
+      <div className="relative border w-full">
         {/* <!-- Carousel --> */}
         <div
           id="carouselExample"
@@ -46,20 +46,20 @@ function Home() {
           {/* <!-- Images --> */}
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={home1} className="d-block w-100 hero-img" />
+              <img src={home1} className=" h-156  w-full object-cover " />
+            </div>
+
+            {/* <div className="carousel-item">
+              <img src={home2} className="block h-155  w-full object-cover" />
             </div>
 
             <div className="carousel-item">
-              <img src={home2} className="d-block w-100 hero-img" />
+              <img src={home3} className="block h-155  w-full object-cover" />
             </div>
 
             <div className="carousel-item">
-              <img src={home3} className="d-block w-100 hero-img" />
-            </div>
-
-            <div className="carousel-item">
-              <img src={home4} className="d-block w-100 hero-img" />
-            </div>
+              <img src={home4} className="block h-155  w-full object-cover" />
+            </div> */}
           </div>
 
           {/* <!-- Controls --> */}
@@ -83,17 +83,17 @@ function Home() {
         {/* <!-- Overlay Content (FIXED) --> */}
         {/* <!-- Your Favourite Food Section Header niche --> */}
         <section>
-          <div className="hero-overlay position-absolute d-flex align-items-center justify-content-center text-center text-light">
+          <div className="absolute flex items-center justify-center text-center  text-white top-0 left-0 w-full pt-35">
             
-            <div className="container px-3">
+            <div className="container  ">
             
-              <h1 className="  ">
+              <h1 className="text-4xl ">
                 Your Favorite Food,
                 <br />
                 Delivered Fast
               </h1>
 
-              <p className="fs-5 fs-md-4 mt-3">
+              <p className="text-lg md:text-2xl mt-3">
                 Order from thousands of restaurants and get it delivered to your
                 doorstep
               </p>
@@ -101,19 +101,19 @@ function Home() {
               {/* <!-- Buttons --> */}
               <div
                 id="buttonHome"
-                className="mt-5 text-decoration-none d-flex justify-content-center align-items-center gap-3 my-4 flex-wrap"
+                className="mt-5 no-underline flex justify-center items-center gap-3 my-4 flex-wrap"
               >
                 <button
-                  id="signup"
-                  className="btn text-light p-4 py-2 rounded-3"
+                 
+                  className="bg-(--color-primary) text-(--color-primary-content)  p-4 py-2 rounded-3"
                   onClick={() => navigate("/register")}
                 >
                   Sign Up
                 </button>
 
                 <button
-                  id="orderNow"
-                  className="text-dark fw-bold p-4 py-2 rounded-3"
+                  
+                  className="  bg-(--color-primary-content) text-(--color-base-content) fw-bold p-4 py-2 rounded-3"
                   onClick={() => navigate("/order")}
                 >
                   Order Now
@@ -121,13 +121,13 @@ function Home() {
               </div>
               {/* <!-- Search --> */}
               <div
-                id="search-box"
-                className="bg-white pt-2 pb-2 rounded-3 d-flex align-items-center px-3 py-1 mx-auto"
+              
+                className="bg-white pt-2 pb-2 rounded-3 flex items-center px-3 py-1 mx-auto w-[50%] max-w-full"
               >
                 <i className="bi bi-search text-muted me-2"></i>
                 <input
                   id="text"
-                  className="border-0 shadow-none fs-6 fw-medium"
+                  className="border-0 placeholder:text-(--color-primary) w-full shadow-none fw-medium"
                   placeholder="Search restaurants or dishes...."
                 />
               </div>
@@ -138,25 +138,25 @@ function Home() {
 
       {/* <!-- card Section --> */}
 
-      <section className="py-5 justify-content-center" id="restaurant-card">
-        <div className="restaurant-div justify-content-center">
-          <div className="headingName">
-            <h2 className="card-heading fw-bolder">Featured Restaurants</h2>
-            <p className="restaurant-available">4 restaurants available</p>
+      <section className="py-5 justify-center bg-linear-to-b from-(--color-primary) to-(--color-primary-content)   ">
+        <div className="mx-auto px-3.75 justify-center">
+          <div className="ml-0 p-2.5">
+            <h2 className="text-(--color-primary-content) fw-bolder">Featured Restaurants</h2>
+            <p className="text-(--color-base-200) text-4xl ">4 restaurants available</p>
           </div>
-          <div className="card-outer row g-0 d-flex align-items-center justify-content-center mt-4">
+          <div className="flex items-center justify-center mt-4">
             {/* <!-- Card 1 --> */}
             <div
-              className="card border-0 shadow-sm rounded-3 col-12 col-md-6 col-lg-3"
+              className="bg-(--color-base-100) transition-transform duration-100 ease-linear border-0 shadow-sm rounded-3 col-12 col-md-6 col-lg-3"
               id="all-cards"
             >
-              <div className="image position-relative">
+              <div className="image relative">
                 <img
                   src={taj}
-                  alt="image"
-                  className="w-100 border-0 rounded-top-3"
+                  alt="image" 
+                  className="w-full border-0 h-45 object-cover rounded-top-3"
                 />
-                <span className="star position-absolute rounded-pill px-2">
+                <span className="top-[5%] right-[3%] bg-(--color-primary) text-(--color-primary-content) position-absolute rounded-pill px-2">
                   <i className="bi bi-star-fill"></i>
                   5.0
                 </span>

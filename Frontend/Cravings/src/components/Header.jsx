@@ -6,10 +6,10 @@ function Header() {
     <>
       <div
         id="header"
-        className="d-flex justify-content-between align-items-center shadow-md"
+        className="flex justify-between items-center shadow-md  bg-[#C2410C]  w-full"
       >
         <Link to={"/home"}>
-          <img src={image1} className="ms-3  flex-shrink-0" alt=""  />
+          <img src={image1} className=" w-24 shrink-0" alt=""  />
 
         </Link>
       
@@ -32,7 +32,7 @@ function Header() {
           <Link
             to={"/login"}
             id="login"
-            className="btn px-3 w-100 text-light w-sm-auto"
+            className=" px-3 w-100 text-light w-sm-auto"
           >
             Login
           </Link>
