@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaStore } from "react-icons/fa";
+// import { FaStore } from "react-icons/fa";
+import { MdOutlineGirl } from "react-icons/md";
 
 const Header = () => {
   return (
     <>
       <div className="bg-blue-500 flex justify-between p-3">
         <div className="flex gap-3 items-center">
-          <FaStore className="text-2xl text-white" />
-          <span className="text-white text-xl">Fake Store</span>
+          {/* <FaStore className="text-2xl text-white" /> */}
+          <MdOutlineGirl className="text-5xl text-white" />
+          <span className="text-white text-3xl">MakeUpStore</span>
         </div>
-        <div className="flex gap-4">
+        <div className="text-2xl flex gap-4">
           <Link to={"/"} className="text-white hover:underline">
             Home
           </Link>
