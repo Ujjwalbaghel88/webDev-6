@@ -1,9 +1,9 @@
 import express from "express";
-import { ContactUs } from "../controllers/public.controller.js";
+import { ContactUs, Feedback } from "../controllers/public.controller.js";
 
 const router = express.Router();
 
-router.post("/contact-us" ,ContactUs);
-
+router.post("/contact-us", ContactUs);
+router.post("/feedback", Feedback);
 
 export default router;
