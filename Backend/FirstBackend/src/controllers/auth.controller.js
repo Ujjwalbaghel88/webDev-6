@@ -22,7 +22,7 @@ export const RegisterUser = async (req, res, next) => {
     const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
     const photo = {
       url: photoUrl,
-      public_id: null,
+      publicId: null,
     };
 
     const newUser = await User.create({
@@ -40,7 +40,7 @@ export const RegisterUser = async (req, res, next) => {
     });
   } catch (error) {
 
-    const error = new Error("Internal Server Error");
+
     console.log(error.message);
     next();
 
