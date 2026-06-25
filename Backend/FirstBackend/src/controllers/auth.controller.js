@@ -1,4 +1,4 @@
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 export const RegisterUser = async (req, res) => {
   try {
     const { fullName, email, password, phone, gender, dob } = req.body;
