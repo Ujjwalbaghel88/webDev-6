@@ -11,6 +11,7 @@ export const RegisterUser = async (req, res, next) => {
       return next(error);
     }
 
+
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       const error = new Error("All fields  Regqired");
@@ -47,8 +48,40 @@ export const RegisterUser = async (req, res, next) => {
   }
 };
 
-export const LoginUser = (req, res) => {
-  res.json({ message: "Login successful from controller" });
+export const LoginUser =async (req, res, next) => {
+
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      const err = new Error("All fields are required");
+      err.statusCode = 400;
+      return next(err);
+    }
+
+    const existingUser = await User.findOne({ email });
+    if (!existingUser) {
+      const err = new Error("User Not Found");
+      err.statusCode = 404;
+      return next(err);
+    }
+
+    if (password !== existingUser.password) {
+      const err = new Error("Invalid Password");
+      err.statusCode = 401;
+      return next(err);
+    }
+
+    res.status(200).json({
+      message: "Welcome Back!",
+      data: existingUser
+    });
+
+  } catch (error) {
+    console.log(error.message);
+    next(error);
+  }
+
 };
 
 export const LogoutUser = (req, res) => {
