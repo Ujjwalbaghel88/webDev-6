@@ -1,12 +1,11 @@
 :root{
 
-  --background--color:rgb(255, 170, 12);
+  --background--color:rgb(114, 83, 24);
   --text--color:yellow;
   --color:rgb(29, 255, 44);
 }
 header{
     background-color:var(--background--color);
-   
     border: 5px solid black;
     border-radius: 5px;
     color: var(--color--);
