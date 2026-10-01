@@ -12,7 +12,7 @@ function Header() {
           <img src={image1} className=" w-24 shrink-0" alt="" />
 
         </Link>
-      
+
         {/* <div className="d-flex gap-4  fs-5 fw-bold">
           <Link to={"/home"} className="text-white text-decoration-none">
             Home
@@ -32,14 +32,15 @@ function Header() {
           <Link
             to={"/login"}
             id="login"
-            className=" px-3 w-100 text-light w-sm-auto"
+            // className=" px-3 w-100 text-light w-sm-auto"
+            className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
           >
             Login
           </Link>
           <Link
             to={"/register"}
             id="register"
-            className="btn btn-light px-3 w-100 w-sm-auto"
+           className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
           >
             Register
           </Link>
