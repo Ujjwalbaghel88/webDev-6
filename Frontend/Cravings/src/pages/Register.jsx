@@ -1,96 +1,47 @@
+import { Link, useNavigate } from "react-router-dom";
 import foodtable from "../assets/foodTable.png";
+
 function Register() {
+  const navigate = useNavigate();
+  const inputClass = "w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-orange-500 focus:ring-4 focus:ring-orange-100";
+
   return (
-    <>
-      <main>
-        <div className="d-flex align-items-center login position-relative bg-light-subtle">
-          <div className="login-bg">
-            <img src={foodtable} alt="FoodTable" className="object-fit-cover" />
+    <main className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-4 py-10">
+      <img src={foodtable} alt="A table filled with food" className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/45 to-orange-950/55" />
+      <form onSubmit={(event) => { event.preventDefault(); navigate("/home"); }} className="relative z-10 w-full max-w-xl rounded-3xl border border-white/50 bg-white/95 p-6 shadow-2xl backdrop-blur sm:p-9">
+        <p className="mb-2 text-center text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Join Cravings</p>
+        <h1 className="text-center text-3xl font-extrabold text-zinc-900">Create your account</h1>
+        <p className="mt-2 text-center text-sm text-zinc-500">Choose how you want to be part of Cravings.</p>
+
+        <fieldset className="mt-6">
+          <legend className="mb-3 text-sm font-semibold text-zinc-700">Register as</legend>
+          <div className="grid grid-cols-3 gap-2">
+            {["Customer", "Restaurant", "Rider"].map((role, index) => (
+              <label key={role} className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-2 py-3 text-xs font-semibold text-zinc-700 transition hover:border-orange-400 sm:text-sm">
+                <input type="radio" name="role" value={role.toLowerCase()} defaultChecked={index === 0} className="accent-orange-700" />{role}
+              </label>
+            ))}
           </div>
-          <div className="d-flex register-div card position-absolute flex-column gap-2 px-5 py- rounded-3 mx-2 bg-light ms-auto me-4">
-            <h1 className="text-center text-danger mt-1 fw-bold">
-              Create Account
-            </h1>
-            <p className="text-center">
-              Join us a Customer,Restaurant,or Rider
-            </p>
+        </fieldset>
 
-            <label className="form-label fw-medium">Register as:</label>
-            <div className="d-flex gap-3 mb-2">
-              <div>
-                <input type="radio" name="role" checked /> Customer
-              </div>
-              <div>
-                <input type="radio" name="role" /> Restaurant
-              </div>
-              <div>
-                <input type="radio" name="role" /> Rider
-              </div>
-            </div>
-
-            {/* <!-- Full Name --> */}
-            <input
-              type="text"
-              className="form-control mb-1 py-2"
-              placeholder="Enter Your full name"
-            />
-            {/* <!-- Enter Email --> */}
-            <input
-              type=" email"
-              className="form-control mb-2 py-2"
-              placeholder="Enter Your email"
-            />
-            {/* <!-- Phone Number --> */}
-            <input
-              type="number"
-              className="form-control mb-2 py-2"
-              placeholder="Enter your phone number"
-            />
-            {/* <!-- Password --> */}
-            <input
-              type="password"
-              className="form-control mb-2 py-2"
-              placeholder="Enter your password"
-            />
-            {/* <!-- Confirm your password --> */}
-            <input
-              type="password"
-              className="form-control mb-2 py-2"
-              placeholder="Confirm your password"
-            />
-
-            <div className="p-2 d-flex justify-content-between align-items-center mb-3 w-100">
-              <div className="d-flex gap-2">
-                <input type="checkbox" />
-                <span>
-                  I agree to the
-                  <a
-                    className="text-danger text-decoration-none fw-bold"
-                    href="#"
-                  >
-                    terms and conditions
-                  </a>
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <button className="btn btn-danger w-100">Register</button>
-            </div>
-
-            <div className="d-flex align-items-center fs-6 mb-2">
-              <span className="opacity-75">Already registerd?</span>
-              <a
-                href="#"
-                className="ms-3 text-decoration-none text-danger fw-bold"
-              >
-                Login here
-              </a>
-            </div>
-          </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <input type="text" required autoComplete="name" className={inputClass} placeholder="Full name" aria-label="Full name" />
+          <input type="email" required autoComplete="email" className={inputClass} placeholder="Email address" aria-label="Email address" />
+          <input type="tel" required autoComplete="tel" className={inputClass} placeholder="Phone number" aria-label="Phone number" />
+          <input type="password" required autoComplete="new-password" className={inputClass} placeholder="Password" aria-label="Password" />
+          <input type="password" required autoComplete="new-password" className={`${inputClass} sm:col-span-2`} placeholder="Confirm password" aria-label="Confirm password" />
         </div>
-      </main>
-    </>
+
+        <label className="mt-5 flex items-start gap-2 text-sm text-zinc-600">
+          <input type="checkbox" required className="mt-1 size-4 accent-orange-700" />
+          <span>I agree to the <a href="#terms" className="font-semibold text-orange-700 hover:underline">terms and conditions</a>.</span>
+        </label>
+        <button type="submit" className="mt-6 w-full rounded-xl bg-orange-700 px-4 py-3 font-bold text-white shadow-lg shadow-orange-700/20 transition hover:bg-orange-800">Create account</button>
+        <p className="mt-5 text-center text-sm text-zinc-600">Already registered? <Link to="/login" className="font-bold text-orange-700 hover:underline">Login</Link></p>
+      </form>
+    </main>
   );
 }
+
 export default Register;

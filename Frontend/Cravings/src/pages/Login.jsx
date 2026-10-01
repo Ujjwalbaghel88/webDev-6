@@ -1,75 +1,33 @@
+import { Link, useNavigate } from "react-router-dom";
 import foodtable from "../assets/foodtable.png";
-import { useNavigate } from "react-router-dom";
-// import aboutPage from "../assets/aboutPage.png";
 
 function Login() {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
-    <>
-      <main>
-        <div className="position-relative login w-100 h-100">
-          <div className="login-bg">
-            <img src={foodtable} alt="FoodTable" className="object-fit-cover" />
-          </div>
-          <div className="login-div card d-grid position-absolute">
-            <h2 className="text-center fw-bolder">Welcome Back</h2>
-            <p className="text-center">Login to your Cravings account</p>
-            <div className="login-input d-grid gap-2 mb-3 mt-2">
-              <span className="fw-semibold">Email</span>
-              <input
-                type="email"
-                className="input-field form-control shadow-none"
-                placeholder="Enter your Email"
-              />
-            </div>
-            <div className="login-input d-grid gap-2 mb-3">
-              <span className="fw-semibold">Password</span>
-              <div className="d-flex align-items-center pe-3 input-field pb">
-                <input
-                  type="password"
-                  className="form-control shadow-none bg-transparent border-0"
-                  placeholder="Enter your password"
-                />
-                <i className="bi bi-eye-fill"></i>
-              </div>
-            </div>
-            <div className="remember d-flex justify-content-between align-items-center">
-              <div className="d-flex gap-2 align-items-center">
-                <input type="checkbox" id="remember" />
-                <label for="remember" className="terms">
-                  Remember me
-                </label>
-              </div>
-              <div>
-                <a href="" id="anchor-underline" className="terms">
-                  Forgot Password?
-                </a>
-              </div>
-            </div>
-            <button
-              className="w-100 mt-4 mb-3 py-2 border-0 rounded-2"
-              type="submit"
-            >
-              <a href="" className="text-white" id="login-button">
-                Login
-              </a>
-            </button>
-            <div className="d-flex align-items-center mb-3 line terms">
-              <hr />
-              Don't have account?
-              <hr />
-            </div>
-            <a
-              href="./register.html"
-              className="text-center"
-              id="anchor-underline"
-            >
-              <b>Create an account</b>
-            </a>
-          </div>
+    <main className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-4 py-12">
+      <img src={foodtable} alt="A table filled with food" className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/45 to-orange-950/55" />
+      <form onSubmit={(event) => { event.preventDefault(); navigate("/home"); }} className="relative z-10 w-full max-w-md rounded-3xl border border-white/50 bg-white/95 p-7 shadow-2xl backdrop-blur sm:p-9">
+        <p className="mb-2 text-center text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Welcome back</p>
+        <h1 className="text-center text-3xl font-extrabold text-zinc-900">Login to Cravings</h1>
+        <p className="mt-2 text-center text-sm text-zinc-500">Good food is just a few clicks away.</p>
+
+        <label className="mt-7 block text-sm font-semibold text-zinc-700" htmlFor="login-email">Email</label>
+        <input id="login-email" type="email" required autoComplete="email" placeholder="you@example.com" className="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-orange-500 focus:ring-4 focus:ring-orange-100" />
+
+        <label className="mt-5 block text-sm font-semibold text-zinc-700" htmlFor="login-password">Password</label>
+        <input id="login-password" type="password" required autoComplete="current-password" placeholder="Enter your password" className="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-orange-500 focus:ring-4 focus:ring-orange-100" />
+
+        <div className="mt-4 flex items-center justify-between gap-3 text-sm">
+          <label className="flex items-center gap-2 text-zinc-600"><input id="remember" type="checkbox" className="size-4 accent-orange-700" />Remember me</label>
+          <button type="button" className="font-semibold text-orange-700 hover:text-orange-900">Forgot password?</button>
         </div>
-      </main>
-    </>
+
+        <button type="submit" className="mt-7 w-full rounded-xl bg-orange-700 px-4 py-3 font-bold text-white shadow-lg shadow-orange-700/20 transition hover:bg-orange-800">Login</button>
+        <p className="mt-6 text-center text-sm text-zinc-600">Don&apos;t have an account? <Link to="/register" className="font-bold text-orange-700 hover:underline">Create one</Link></p>
+      </form>
+    </main>
   );
 }
 

@@ -1,302 +1,105 @@
+import { Link } from "react-router-dom";
 import aboutPage from "../assets/aboutPage.png";
+
+const values = [
+  { icon: "♥", title: "Passion for food", description: "Great food brings people together. Every order is handled with care." },
+  { icon: "✿", title: "Fresh & local", description: "We partner with neighborhood restaurants to bring you local favorites." },
+  { icon: "✓", title: "Safe & reliable", description: "We make every delivery dependable, from checkout through arrival." },
+];
+const team = [
+  { initials: "SR", name: "Sofia Reyes", role: "CEO & Co-Founder" },
+  { initials: "ML", name: "Marcus Lim", role: "Co-Founder" },
+  { initials: "AP", name: "Aisha Patel", role: "Head of Operations" },
+  { initials: "JO", name: "James Owusu", role: "Head of Design" },
+];
 
 function About() {
   return (
-    <>
-      <main>
-        {/* <!-- Hero section --> */}
-        <section>
-          <div className="about-hersection">
-            <div className="about-login-bg">
-              {/* <img src={aboutPage} alt="" /> */}
-              <img
-                src={aboutPage}
-                alt="FoodTable"
-                className="object-fit-cover  about-dull-img"
-              />
-            </div>
-            <div className="about-herocontent position-absolute d-grid w-50 justify-content-center text-center gap-2">
-              {/* <div className="about-herocontent position-absolute d-grid w-100 px-3"> */}
-              <div>{/* <img src="" alt="Logo" className="" /> */}</div>
-              <div>
-                <h1 className="display-5 text-white fw-bold">
-                  About <span>Cravings</span>
-                </h1>
-                <p className="text-light opacity-75">
-                  Connecting hungry hearts with amazing food — one delivery at a
-                  time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- rating section --> */}
-        <section className="about-rating px-3 pt-3 pb-2">
-          {/* <!-- Cards --> */}
-          <div className="about-records my-1">
-            <div className="row mx-5 d-flex justify-content-center">
-              {/* <!-- Card 1 --> */}
-              <div className="col-12 col-sm-6 mx-4 col-md-4 col-lg-2">
-                <div className="d-grid py-2 px-2 text-center justify-items-center">
-                  <p className="fs-3 fw-bolder core-values m-0">50K+</p>
-                  <p className="text-light rating-des">Happy Customer</p>
-                </div>
-              </div>
-              {/* <!-- Card 2 --> */}
-              <div className="col-12 col-sm-6 mx-4 col-md-4 col-lg-2">
-                <div className="d-grid px-2 py-2 text-center justify-items-center">
-                  <p className="fs-3 fw-bolder core-values m-0">1,200+</p>
-                  <p className="text-light rating-des">Partner Restaurants</p>
-                </div>
-              </div>
-              {/* <!-- Card 3 --> */}
-              <div className="col-12 col-sm-6 mx-4 col-md-4 col-lg-2">
-                <div className="d-grid px-2 py-2 text-center justify-items-center">
-                  <p className="fs-3 fw-bolder core-values m-0">3,500+</p>
-                  <p className="text-light rating-des">Active Riders</p>
-                </div>
-              </div>
-              {/* <!-- Card 4 --> */}
-              <div className="col-12 col-sm-6 mx-4 col-md-4 col-lg-2">
-                <div className="d-grid px-2 py-2 text-center justify-items-center">
-                  <div className="d-flex justify-content-center gap-2">
-                    <i className="bi bi-star-fill text-warning fs-3"></i>
-                    <p className="fs-3 fw-bolder core-values m-0">4.8</p>
-                  </div>
-                  <p className="text-light rating-des">Average Rating</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- Our Story --> */}
-        <section className="our-story d-flex justify-content-center">
-          <div className=" px-lg-5 px-md-1 m-lg-5 m-0 m-md-0">
-            <div className="row mx-lg-5 mx-0 mx-md-0 px-lg-5 px-md-0 d-flex justify-content-center">
-              <div className="col-12 col-lg-6">
-                <p className="core-values px-3 mb-3 mt-3 text-uppercase">
-                  Our story
-                </p>
-                <div className="px-3">
-                  <h2>Born from a love of great food</h2>
-                  <p className="text-secondary">
-                    Cravings started in 2022 when three food lovers realized
-                    that finding and ordering from local restaurants was harder
-                    than it needed to be. We set out to build a platform that
-                    puts restaurants, riders, and customers first — all in one
-                    seamless experience.
-                  </p>
-                  <p className="text-secondary">
-                    Today, we operate across dozens of cities, empowering small
-                    businesses to reach new customers and enabling riders to
-                    build a flexible livelihood — all while bringing delicious
-                    meals straight to your door.
-                  </p>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 px-1 mt-4">
-                <div className="px-3">
-                  <div className="row px-lg-4 px-md-1">
-                    {/* <!-- Card 1 --> */}
-                    <div className="col-12 col-lg-6 py-2 px-2">
-                      <div className="px-3 py-2 our-facility rounded-3">
-                        <i className="bi bi-fork-knife fs-3"></i>
-                        <p className="fw-bold">Restaurants</p>
-                        <p className="text-secondary our-story-description">
-                          Diverse cuisines from local gems
-                        </p>
-                      </div>
-                    </div>
-                    {/* <!-- Card 2 --> */}
-                    <div className="col-12 col-lg-6 py-2 px-2">
-                      <div className="px-3 py-1 our-facility rounded-3">
-                        <i className="bi bi-bicycle fs-3"></i>
-                        <p className="fw-bold">Riders</p>
-                        <p className="text-secondary our-story-description">
-                          Fast, reliable delivery partners
-                        </p>
-                      </div>
-                    </div>
-                    {/* <!-- Card 3 --> */}
-                    <div className="col-12 col-lg-6 py-2 px-2">
-                      <div className="px-3 py-1 our-facility rounded-3">
-                        <i className="bi bi-shop-window fs-3"></i>
-                        <p className="fw-bold">Partners</p>
-                        <p className="text-secondary our-story-description">
-                          Businesses that grow with us
-                        </p>
-                      </div>
-                    </div>
-                    {/* <!-- Card 4 --> */}
-                    <div className="col-12 col-lg-6 py-2 px-2">
-                      <div className="px-3 py-1 our-facility rounded-3">
-                        <i className="bi bi-suit-heart-fill fs-3"></i>
-                        <p className="fw-bold">Community</p>
-                        <p className="text-secondary our-story-description">
-                          People at the heart of everything
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- Our Core Values --> */}
-        <section className="details pt-5 pb-2" id="about-details">
-          {/* <!-- Heading --> */}
-          <div className="trust text-center">
-            <p className="core-values fw-semibold">WHAT WE STAND FOR</p>
-            <h2 className="about-trust-content fw-bolder">Our Core Values</h2>
-          </div>
+    <main className="bg-white text-zinc-900">
+      <section className="relative isolate flex min-h-[26rem] items-center justify-center overflow-hidden px-4 py-20 text-center">
+        <img src={aboutPage} alt="A meal shared around a table" className="absolute inset-0 -z-20 h-full w-full object-cover" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/75 via-black/55 to-orange-950/50" />
+        <div className="max-w-3xl text-white">
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-200">Our story</p>
+          <h1 className="mt-3 text-4xl font-extrabold sm:text-6xl">About Cravings</h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/85">Connecting hungry hearts with amazing food, one delivery at a time.</p>
+        </div>
+      </section>
 
-          {/* <!-- Cards --> */}
-          <div className="records">
-            <div className="row mb-5 mt-2 g-4 mx-sm-0 mx-lg-5 mx-md-0 d-flex justify-content-center">
-              {/* <!-- Card 1 --> */}
-              <div className="col-12 col-sm-5 col-md-6 col-lg-3">
-                <div className="about-record-cards d-grid place-items-center text-center gap-1 p-4 shadow rounded-3 h-100">
-                  <i className="bi bi-suit-heart-fill fs-3 core-values"></i>
-                  <h3 className="fs-5 fw-semibold text-black">
-                    Passion for Food
-                  </h3>
-                  <p className="about-trust-description text-secondary">
-                    We believe great food brings people together. Every order is
-                    crafted with care.
-                  </p>
-                </div>
-              </div>
+      <section className="bg-orange-800 px-4 py-7 text-white">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 text-center md:grid-cols-4">
+          {[{ value: "50K+", label: "Happy customers" }, { value: "1,200+", label: "Partner restaurants" }, { value: "3,500+", label: "Active riders" }, { value: "4.8 ★", label: "Average rating" }].map((stat) => (
+            <div key={stat.label}><p className="text-3xl font-extrabold">{stat.value}</p><p className="mt-1 text-sm text-orange-100">{stat.label}</p></div>
+          ))}
+        </div>
+      </section>
 
-              {/* <!-- Card 2 --> */}
-              <div className="col-12 col-sm-5 col-md-6 col-lg-3">
-                <div className="about-record-cards d-grid place-items-center text-center gap-1 p-4 shadow rounded-3 h-100">
-                  <i className="bi bi-leaf-fill fs-3 core-values"></i>
-                  <h3 className="fs-5 fw-semibold text-black">Fresh & Local</h3>
-                  <p className="about-trust-description text-secondary">
-                    We partner with local restaurants to bring you the freshest
-                    meals from your neighborhood.
-                  </p>
-                </div>
-              </div>
-
-              {/* <!-- Card 3 --> */}
-              <div className="col-12 col-sm-5 col-md-6 col-lg-3">
-                <div className="about-record-cards d-grid place-items-center text-center gap-1 p-4 shadow rounded-3 h-100">
-                  <i className="bi bi-shield-shaded fs-3 core-values"></i>
-                  <h3 className="fs-5 fw-semibold text-black">
-                    Safe & Reliable
-                  </h3>
-                  <p className="about-trust-description text-secondary">
-                    Secure payments, real-time tracking, and verified riders —
-                    every single delivery.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section className="px-4 py-16 sm:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Our story</p>
+            <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">Born from a love of great food</h2>
+            <p className="mt-5 leading-7 text-zinc-600">Cravings started in 2022 when three food lovers realized that finding and ordering from local restaurants should be easier. We set out to build a platform that puts restaurants, riders, and customers first.</p>
+            <p className="mt-4 leading-7 text-zinc-600">Today, we help neighborhood businesses reach new customers and connect riders with flexible work, while bringing delicious meals straight to your door.</p>
           </div>
-        </section>
-        {/* <!-- Meet the team --> */}
-        <section className="details pt-5 pb-1">
-          {/* <!-- Heading --> */}
-          <div className="trust text-center">
-            <p className="core-values fw-semibold">
-              The People Behind Cravings
-            </p>
-            <h2 className="about-trust-content fw-bolder">Meet the Team</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {[{ icon: "♨", title: "Restaurants", description: "A wide range of cuisines from local gems." }, { icon: "➜", title: "Riders", description: "Fast, reliable delivery partners." }, { icon: "⌂", title: "Partners", description: "Local businesses growing with us." }, { icon: "♥", title: "Community", description: "People at the heart of every order." }].map((item) => (
+              <article key={item.title} className="rounded-2xl border border-orange-100 bg-orange-50/70 p-5">
+                <span className="text-2xl text-orange-700" aria-hidden="true">{item.icon}</span>
+                <h3 className="mt-3 font-bold">{item.title}</h3>
+                <p className="mt-1 text-sm leading-6 text-zinc-600">{item.description}</p>
+              </article>
+            ))}
           </div>
+        </div>
+      </section>
 
-          {/* <!-- Cards --> */}
-          <div className="about-records1 ">
-            <div className="row mt-5 mb-3 g-4 mx-5 d-flex justify-content-center">
-              {/* <!-- Card 1 --> */}
-              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div className="d-grid px-3 py-2 text-center justify-items-center">
-                  <div className="d-flex justify-content-center">
-                    <h3 className="team-profile rounded-circle justify-content-center text-light d-flex align-items-center">
-                      SR
-                    </h3>
-                  </div>
-                  <div>
-                    <p className="fw-bold">Sofia Reyes</p>
-                    <p className="text-secondary">CEO & Co-Founder</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* <!-- Card 2 --> */}
-              <div className="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div className="d-grid px-3 py-2 text-center justify-items-center">
-                  <div className="d-flex justify-content-center">
-                    <h3 className="team-profile rounded-circle justify-content-center text-light d-flex align-items-center">
-                      ML
-                    </h3>
-                  </div>
-                  <div>
-                    <p className="fw-bold">Marcus Lim</p>
-                    <p className="text-secondary">CEO & Co-Founder</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* <!-- Card 3 --> */}
-              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div className="d-grid px-3 py-2 text-center justify-items-center">
-                  <div className="d-flex justify-content-center">
-                    <h3 className="team-profile rounded-circle justify-content-center text-light d-flex align-items-center">
-                      AP
-                    </h3>
-                  </div>
-                  <div>
-                    <p className="fw-bold">Aisha Patel</p>
-                    <p className="text-secondary">Head of Operations</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* <!-- Card 4 --> */}
-              <div className="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div className="d-grid px-3 mx-1 py-2 text-center justify-items-center">
-                  <div className="d-flex justify-content-center">
-                    <h3 className="team-profile rounded-circle justify-content-center text-light d-flex align-items-center">
-                      JO
-                    </h3>
-                  </div>
-                  <div>
-                    <p className="fw-bold texs">James Owusu</p>
-                    <p className="text-secondary">Head of Design</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section className="bg-zinc-50 px-4 py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">What we stand for</p>
+            <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">Our core values</h2>
           </div>
-        </section>
-        {/* <!-- Become a partner --> */}
-        <section id="partner">
-          <div className="partner-div d-grid gap-3 justify-content-center">
-            <h2 className="text-center fw-bolder fs-1">
-              Ready to satisfy your cravings?
-            </h2>
-            <p className="text-center text-dark">
-              Join thousands of happy customers ordering their favourite <br />
-              meals every day.
-            </p>
-            <div className="d-flex justify-content-center gap-3 mb-4">
-              <a href="./about.html" className="btn btn-light px-4 py-2">
-                Get Started
-              </a>
-              <a
-                href="./contact.html"
-                className="btn px-4 py-2 text-white"
-                id="about-contact"
-              >
-                Contact Us
-              </a>
-            </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-3">
+            {values.map((value) => (
+              <article key={value.title} className="rounded-2xl border border-zinc-100 bg-white p-7 text-center shadow-sm">
+                <span className="mx-auto grid size-12 place-items-center rounded-full bg-orange-100 text-xl font-bold text-orange-700">{value.icon}</span>
+                <h3 className="mt-4 text-lg font-bold">{value.title}</h3>
+                <p className="mt-2 leading-6 text-zinc-600">{value.description}</p>
+              </article>
+            ))}
           </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">The people behind Cravings</p>
+            <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">Meet the team</h2>
+          </div>
+          <div className="mt-9 grid grid-cols-2 gap-5 sm:grid-cols-4">
+            {team.map((person) => (
+              <article key={person.initials} className="rounded-2xl border border-zinc-100 p-5 text-center">
+                <div className="mx-auto grid size-20 place-items-center rounded-full bg-gradient-to-br from-orange-500 to-orange-800 text-xl font-extrabold text-white shadow-lg">{person.initials}</div>
+                <h3 className="mt-4 font-bold">{person.name}</h3>
+                <p className="mt-1 text-sm text-zinc-500">{person.role}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-orange-100 bg-white px-4 py-14 text-center text-zinc-900">
+        <h2 className="text-3xl font-extrabold sm:text-4xl">Ready to satisfy your cravings?</h2>
+        <p className="mx-auto mt-3 max-w-xl text-zinc-600">Join thousands of happy customers ordering their favorite meals every day.</p>
+        <div className="mt-7 flex flex-wrap justify-center gap-3">
+          <Link to="/register" className="rounded-xl bg-orange-700 px-6 py-3 font-bold text-white transition hover:bg-orange-800">Get started</Link>
+          <Link to="/contact-us" className="rounded-xl border border-orange-200 px-6 py-3 font-bold text-orange-800 transition hover:bg-orange-50">Contact us</Link>
+        </div>
+      </section>
+    </main>
   );
 }
+
 export default About;

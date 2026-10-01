@@ -1,77 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import image1 from "../assets/image1.png";
+
+const navClass = ({ isActive }) =>
+  `rounded-full px-3 py-2 text-sm font-semibold transition ${
+    isActive
+      ? "bg-white/15 text-white"
+      : "text-white/80 hover:bg-white/10 hover:text-white"
+  }`;
 
 function Header() {
   return (
-    <>
-      <div
-        id="header"
-        // className="flex justify-between items-center shadow-md  bg-[#C2410C]  w-full"
-        className="sticky top-0 z-99 flex items-center justify-between px-12 py-1 bg-(--color-primary) text-white w-full h-16 shadow-md">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-(--color-primary) text-white shadow-lg shadow-black/10">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link to="/home" aria-label="Cravings home" className="flex h-12 shrink-0 items-center">
+          <img src={image1} className="h-full w-auto object-contain" alt="Cravings" />
+        </Link>
 
+        <nav aria-label="Main navigation" className="hidden items-center gap-1 md:flex">
+          <NavLink to="/home" className={navClass}>Home</NavLink>
+          <NavLink to="/about" className={navClass}>About</NavLink>
+          <NavLink to="/order" className={navClass}>Order</NavLink>
+          <NavLink to="/contact-us" className={navClass}>Contact</NavLink>
+        </nav>
 
-
-
-
-        <div className="h-full">
-          <Link to="/home">
-            <img src={image1} className="  shrink-0 w-fit h-full" alt="" />
-          </Link>
-        </div>
-
-        {/* <div className="d-flex gap-4  fs-5 fw-bold">
-          <Link to={"/home"} className="text-white text-decoration-none">
-            Home
-          </Link>
-          <Link to={"/about"} className="text-white text-decoration-none">
-            About
-          </Link>
-          <Link to={"/contact-us"} className="text-white text-decoration-none">
-            Contact Us
-          </Link>
-          <Link to={"/order"} className="text-white text-decoration-none">
-            Order
-          </Link>
-        </div> */}
-
-        <div className="d-flex align-items-center gap-2 mt-2 mt-sm-0">
-          <Link
-            to={"/login"}
-            id="login"
-            // className=" px-3 w-100 text-light w-sm-auto"
-            className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
-          >
+        <div className="flex shrink-0 items-center gap-2">
+          <Link to="/login" className="rounded-full px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10 sm:px-4">
             Login
           </Link>
-          <Link
-            to={"/register"}
-            id="register"
-            className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
-          >
+          <Link to="/register" className="rounded-full bg-white px-4 py-2 text-sm font-bold text-(--color-primary) shadow-sm transition hover:bg-orange-50">
             Register
           </Link>
         </div>
       </div>
-      {/* <div className="bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
-        <div className="text-primary fs-4 fw-bold">My Company</div>
-
-        <div className="d-flex gap-4">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/product"}>Product</Link>
-          <Link to={"/contact-us"}>Contact Us</Link>
-        </div>
-
-        <div className="d-flex gap-3">
-          <Link to={"/login"}>
-            <button className="btn btn-outline-primary">Login</button>
-          </Link>
-          <Link to={"/register"}>
-            <button className="btn btn-primary">Register</button>
-          </Link>
-        </div>
-      </div> */}
-    </>
+    </header>
   );
 }
 
