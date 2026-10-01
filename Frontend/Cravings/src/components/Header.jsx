@@ -6,12 +6,18 @@ function Header() {
     <>
       <div
         id="header"
-        className="flex justify-between items-center shadow-md  bg-[#C2410C]  w-full"
-      >
-        <Link to={"/home"}>
-          <img src={image1} className=" w-24 shrink-0" alt="" />
+        // className="flex justify-between items-center shadow-md  bg-[#C2410C]  w-full"
+        className="sticky top-0 z-99 flex items-center justify-between px-12 py-1 bg-(--color-primary) text-white w-full h-16 shadow-md">
 
-        </Link>
+
+
+
+
+        <div className="h-full">
+          <Link to="/home">
+            <img src={image1} className="  shrink-0 w-fit h-full" alt="" />
+          </Link>
+        </div>
 
         {/* <div className="d-flex gap-4  fs-5 fw-bold">
           <Link to={"/home"} className="text-white text-decoration-none">
@@ -40,7 +46,7 @@ function Header() {
           <Link
             to={"/register"}
             id="register"
-           className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
+            className="text-(--color-primary-content) border border-transparent hover:border-(--color-primary-content) px-3 py-1 rounded"
           >
             Register
           </Link>

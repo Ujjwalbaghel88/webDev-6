@@ -44,9 +44,9 @@ function Home() {
           </div>
 
           {/* <!-- Images --> */}
-          <div className="carousel-inner">
+          <div className="carousel-inner w-full h-full">
             <div className="carousel-item active">
-              <img src={home1} className=" h-156  w-full object-cover " />
+              <img src={home1} className=" h-156  w-full object-fit-cover " />
             </div>
 
             {/* <div className="carousel-item">
@@ -84,10 +84,11 @@ function Home() {
         {/* <!-- Your Favourite Food Section Header niche --> */}
         <section>
           <div className="absolute flex items-center justify-center text-center  text-white top-0 left-0 w-full pt-35">
+         
             
-            <div className="container  ">
+            <div className="container text-center mb-8 ">
             
-              <h1 className="text-5xl font-bold  ">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 Your Favorite Food,
                 <br />
                 Delivered Fast
