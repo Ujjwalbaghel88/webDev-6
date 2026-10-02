@@ -12,7 +12,6 @@ const team = [
   { initials: "AP", name: "Aisha Patel", role: "Head of Operations" },
   { initials: "JO", name: "James Owusu", role: "Head of Design" },
 ];
-
 function About() {
   return (
     <main className="bg-white text-zinc-900">
